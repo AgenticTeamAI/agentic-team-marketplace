@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.2 — 2026-07-15
+
+- **Nieuw platform: Notion Custom Agents** — je Agentic Team draait nu ook ín Notion (Business/Enterprise). Per plugin vind je `notion-agent/AGENT-INSTRUCTIE.md` + `SETUP.md`: connectie toevoegen, instructie plakken, klaar. Zelfde licentie, zelfde playbooks, twee omgevingen.
+- **Slimmere databronnen**: de bron-intake kent nu exacte Notion-database-schema's, en alle agents volgen strikte Notion-werkregels (nooit select-opties of structuren toevoegen zonder voorstel). Werkt ook met je bestáánde CRM/todo-databases — benoem ze in je bronprofiel.
+- Playbooks: lokale JSON-werkbestanden als aanbevolen route zonder CRM (v1.4.x–1.5.x-reeks).
+
 ## 1.4.0 — 2026-07-15
 
 - **Playbooks zijn nu pure methodiek**: vaste database- en bestandsverwijzingen zijn verwijderd. Je agents werken met wat jíj aanreikt (gesprek, projectkennis of je eigen gekoppelde bronnen) en verzinnen nooit data. Een adaptieve databronnen-laag volgt in een latere release.
