@@ -10,7 +10,7 @@
       "name": "agentic-team-essentials",
       "source": "./plugins/agentic-team-essentials",
       "description": "Zes AI-agents voor dagstart, marktbewerking, prospects, pipeline en portfolio — het Agentic Team Essentials-pakket.",
-      "version": "1.5.2",
+      "version": "1.6.0",
       "author": {
         "name": "Agentic Team (Obeya Insights)"
       }
@@ -19,7 +19,7 @@
       "name": "agentic-team-complete",
       "source": "./plugins/agentic-team-complete",
       "description": "Het volledige AI-team van achttien agents: van dagstart en sales tot financiën, juridisch en delivery — Agentic Team Complete.",
-      "version": "1.5.2",
+      "version": "1.6.0",
       "author": {
         "name": "Agentic Team (Obeya Insights)"
       }

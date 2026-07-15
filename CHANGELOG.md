@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.0 — 2026-07-16
+
+- **Notion-werkwijzer — je team in de gratis Notion AI**: vraag de Orchestrator om een "Notion-werkwijzer" en je krijgt een pagina in je eigen Notion met de werkregels van jouw team. Stel die in via Settings → Notion AI → Add Instructions en de standaard Notion AI werkt voortaan volgens die regels — geen Custom Agents of credits nodig. De bron-intake wijst je op deze optie.
+- `notion-agent/SETUP.md` benoemt nu de plan-eisen en credit-kosten van Notion Custom Agents, met de gratis werkwijzer-route als alternatief.
+- Update binnenhalen: `/plugin update agentic-team-complete` (of `agentic-team-essentials`).
+
 ## 1.5.2 — 2026-07-15
 
 - **Nieuw platform: Notion Custom Agents** — je Agentic Team draait nu ook ín Notion (Business/Enterprise). Per plugin vind je `notion-agent/AGENT-INSTRUCTIE.md` + `SETUP.md`: connectie toevoegen, instructie plakken, klaar. Zelfde licentie, zelfde playbooks, twee omgevingen.

@@ -6,9 +6,12 @@ door Notion — elke agent-run verbruikt credits).
 
 **Gratis alternatief:** stuur het team aan vanuit Claude (de plugin) en laat
 het zijn werkdata in jouw Notion bijhouden — de standaard Notion AI kan die
-data vervolgens gewoon lezen, samenvatten en doorzoeken zonder add-on. De
-Custom Agent hieronder is alleen nodig als je het team ook ín Notion wilt
-aansturen.
+data vervolgens gewoon lezen, samenvatten en doorzoeken zonder add-on. Vraag
+de Orchestrator bovendien om de **Notion-werkwijzer**: een pagina die je in
+Notion instelt als Instructions-pagina (Settings → Notion AI → Add
+Instructions → kies die pagina), waarna de standaard Notion AI automatisch
+volgens de werkregels van jouw team werkt. De Custom Agent hieronder is
+alleen nodig als je het team ook ín Notion wilt aansturen.
 
 1. **Zet custom MCP aan**: Settings → Notion AI → AI connectors →
    *Enable Custom MCP servers*.
