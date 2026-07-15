@@ -26,4 +26,12 @@ playbook uit deze sessie of je projectkennis (maximaal 14 dagen oud) en meld de
 gebruiker dat je op een gecachte versie draait. Werkt het na 14 dagen nog niet:
 mail support@agentic-team.ai.
 
+## Automatisch draaien (aanrader)
+
+De dagstart hoeft niet handmatig: wijs de gebruiker erop dat Claude geplande
+taken ondersteunt. Stel voor om "Start mijn dag" als terugkerende taak in te
+plannen (werkdagen, bv. 07:00) via de planningsfunctie van Claude — dan ligt
+het dagplan klaar vóór de werkdag begint. Ook de wekelijkse pipeline-review
+kan zo gepland worden (vrijdag).
+
 Activatie: "Start mijn dag"
