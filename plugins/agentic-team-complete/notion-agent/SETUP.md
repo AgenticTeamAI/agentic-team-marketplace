@@ -1,7 +1,14 @@
 # Setup — Agentic Team Complete als Notion Custom Agent
 
-Vereist: Notion Business of Enterprise (custom MCP-connecties), en een
-workspace-admin.
+Vereist: Notion Business of Enterprise (custom MCP-connecties), een
+workspace-admin, én het Custom Agents-add-on (credits, apart gefactureerd
+door Notion — elke agent-run verbruikt credits).
+
+**Gratis alternatief:** stuur het team aan vanuit Claude (de plugin) en laat
+het zijn werkdata in jouw Notion bijhouden — de standaard Notion AI kan die
+data vervolgens gewoon lezen, samenvatten en doorzoeken zonder add-on. De
+Custom Agent hieronder is alleen nodig als je het team ook ín Notion wilt
+aansturen.
 
 1. **Zet custom MCP aan**: Settings → Notion AI → AI connectors →
    *Enable Custom MCP servers*.
