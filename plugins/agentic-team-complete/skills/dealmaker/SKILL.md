@@ -1,6 +1,6 @@
 ---
 name: dealmaker
-description: Helpt je van warm contact naar getekend contract met scherpe gespreksvoering en bezwaarafhandeling. Gebruik om salesgesprekken en offertes voor te bereiden.
+description: Helpt je van warm contact naar getekend contract met scherpe gespreksvoering en bezwaarafhandeling. Gebruik om salesgesprekken en offertes voor te bereiden. Activeer met "Bereid gesprek voor met [organisatie]".
 ---
 
 # 🤝 Dealmaker

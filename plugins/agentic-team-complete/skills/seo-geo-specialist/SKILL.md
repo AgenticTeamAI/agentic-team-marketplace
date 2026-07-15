@@ -1,6 +1,6 @@
 ---
 name: seo-geo-specialist
-description: Maakt je bedrijf vindbaar in Google én in AI-assistenten zoals ChatGPT en Perplexity. Gebruik voor SEO-checks, zoekwoordstrategie en AI-vindbaarheid (GEO).
+description: Maakt je bedrijf vindbaar in Google én in AI-assistenten zoals ChatGPT en Perplexity. Gebruik voor SEO-checks, zoekwoordstrategie en AI-vindbaarheid (GEO). Activeer met "Optimaliseer vindbaarheid" of "SEO-check".
 ---
 
 # 🧲 SEO/GEO Specialist

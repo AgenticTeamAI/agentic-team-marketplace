@@ -1,6 +1,6 @@
 ---
 name: content-strateeg
-description: Schrijft thought leadership die jou positioneert als expert in je vakgebied. Gebruik voor LinkedIn-posts, artikelen en je contentplanning.
+description: Schrijft thought leadership die jou positioneert als expert in je vakgebied. Gebruik voor LinkedIn-posts, artikelen en je contentplanning. Activeer met "Maak contentplan voor deze maand".
 ---
 
 # ✍️ Content Strateeg

@@ -1,6 +1,6 @@
 ---
 name: management-assistent
-description: Je persoonlijke rechterhand die overzicht bewaakt en prioriteiten stelt zodat niets tussen wal en schip valt. Gebruik voor je ochtendbrief en dagafsluiting.
+description: Je persoonlijke rechterhand die overzicht bewaakt en prioriteiten stelt zodat niets tussen wal en schip valt. Gebruik voor je ochtendbrief en dagafsluiting. Activeer met "Ochtendbrief" of "Dagafsluiting".
 ---
 
 # 📌 Management Assistent

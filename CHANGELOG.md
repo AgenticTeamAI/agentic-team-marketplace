@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.1 — 2026-07-15
+
+- **Vindbaarheid**: elke agent-skill vermeldt nu de letterlijke activatiezin (bv. "Start mijn dag") zodat Claude hem automatisch herkent — slash-commando's zijn niet nodig.
+- **Nieuwe skill `team`**: vraag "welke agents heb ik?" of "wat kan mijn team?" en je krijgt het volledige teamoverzicht met activatiezinnen en ketens.
+- Update binnenhalen: `/plugin update agentic-team-complete` (of `agentic-team-essentials`).
+
 ## 1.3.0 — 2026-07-15
 
 - **🔗 Agent-ketens** (Complete): nieuwe skill `ketens` — de Orchestrator draait de commerciële keten (lead-to-cash) of de content-keten in één sessie via subagents, met gestructureerde overdrachten en één samengevat eindresultaat. Alle 18 agents zijn nu ook als subagent beschikbaar.

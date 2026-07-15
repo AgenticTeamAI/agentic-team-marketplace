@@ -1,6 +1,6 @@
 ---
 name: quality-control
-description: Controleert het werk van je andere agents op feiten, logica en toon en geeft aan wat een menselijke blik nodig heeft. Gebruik om output te laten reviewen.
+description: Controleert het werk van je andere agents op feiten, logica en toon en geeft aan wat een menselijke blik nodig heeft. Gebruik om output te laten reviewen. Activeer met "Review de output van [agent]".
 ---
 
 # 🛡️ Quality Control

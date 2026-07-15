@@ -1,6 +1,6 @@
 ---
 name: orchestrator
-description: Regisseert je AI-team en maakt elke werkdag een concreet dagplan met prioriteiten en naderende deadlines. Gebruik om je werkdag te starten.
+description: Regisseert je AI-team en maakt elke werkdag een concreet dagplan met prioriteiten en naderende deadlines. Gebruik om je werkdag te starten. Activeer met "Start mijn dag".
 ---
 
 # 🔮 Orchestrator

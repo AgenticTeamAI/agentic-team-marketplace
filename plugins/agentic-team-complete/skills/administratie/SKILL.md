@@ -1,6 +1,6 @@
 ---
 name: administratie
-description: Houdt je administratie op orde: elke factuur verstuurd en betaald, elk uur verantwoord. Gebruik voor facturatie, debiteurenbeheer en urenregistratie.
+description: Houdt je administratie op orde: elke factuur verstuurd en betaald, elk uur verantwoord. Gebruik voor facturatie, debiteurenbeheer en urenregistratie. Activeer met "Facturatie-overzicht".
 ---
 
 # 📋 Administratie

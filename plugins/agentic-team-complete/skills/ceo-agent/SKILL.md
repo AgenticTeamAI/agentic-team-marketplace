@@ -1,6 +1,6 @@
 ---
 name: ceo-agent
-description: Strategische sparringpartner voor je commerciële koers: bewaakt richting, prioriteiten en samenhang tussen marketing, sales en product. Gebruik bij koersvragen.
+description: Strategische sparringpartner voor je commerciële koers: bewaakt richting, prioriteiten en samenhang tussen marketing, sales en product. Gebruik bij koersvragen. Activeer met "Strategische koerscheck".
 ---
 
 # 🌟 CEO Agent

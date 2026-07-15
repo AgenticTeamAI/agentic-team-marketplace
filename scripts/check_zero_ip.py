@@ -24,7 +24,10 @@ PATTERNS = [
     (re.compile(r"##\s*(Rol & Missie|Werkwijze per run|Escalatieprincipes|Session Output)"), "playbook-sectiekop"),
 ]
 
-MAX_SKILL_BYTES = 4096  # menukaart-skills zijn klein; groter = verdacht
+# Menukaart-skills zijn klein; groter = verdacht. 8KB laat ruimte voor de
+# team-overzichtsskill (18 agents × menukaartregel) — playbook-content wordt
+# sowieso gevangen door de patroonchecks (sectiekoppen, placeholders, markers).
+MAX_SKILL_BYTES = 8192
 
 failures = []
 

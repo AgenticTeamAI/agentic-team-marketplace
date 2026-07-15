@@ -1,6 +1,6 @@
 ---
 name: delivery-architect
-description: Ontwerpt stap voor stap hoe je een opdracht uitvoert bij de klant. Gebruik als er nog geen duidelijke aanpak is voor een deal, product of maatwerktraject.
+description: Ontwerpt stap voor stap hoe je een opdracht uitvoert bij de klant. Gebruik als er nog geen duidelijke aanpak is voor een deal, product of maatwerktraject. Activeer met "Ontwerp aanpak voor [project]".
 ---
 
 # 🎒 Delivery Architect

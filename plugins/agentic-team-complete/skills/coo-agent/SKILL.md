@@ -1,6 +1,6 @@
 ---
 name: coo-agent
-description: Operationeel leider die financiële gezondheid, compliance, administratie en capaciteit bewaakt. Gebruik voor operationele en organisatorische vraagstukken.
+description: Operationeel leider die financiële gezondheid, compliance, administratie en capaciteit bewaakt. Gebruik voor operationele en organisatorische vraagstukken. Activeer met "Operationeel overzicht".
 ---
 
 # 🏛️ COO Agent

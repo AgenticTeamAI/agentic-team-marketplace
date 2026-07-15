@@ -1,6 +1,6 @@
 ---
 name: product-designer
-description: Ontwerpt en optimaliseert je aanbod vanuit wat de markt nodig heeft. Gebruik voor nieuwe producten, prijsstelling en het aanscherpen van je portfolio.
+description: Ontwerpt en optimaliseert je aanbod vanuit wat de markt nodig heeft. Gebruik voor nieuwe producten, prijsstelling en het aanscherpen van je portfolio. Activeer met "Portfolio check".
 ---
 
 # 🧪 Product Designer

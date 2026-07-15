@@ -1,6 +1,6 @@
 ---
 name: de-stem
-description: Communicatie- en PR-expert die autoriteit bouwt via het juiste verhaal op de juiste podiums. Gebruik voor PR, media-pitches en personal branding.
+description: Communicatie- en PR-expert die autoriteit bouwt via het juiste verhaal op de juiste podiums. Gebruik voor PR, media-pitches en personal branding. Activeer met "Schrijf thought leadership over [onderwerp]".
 ---
 
 # 🎙️ De Stem
