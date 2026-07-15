@@ -1,0 +1,17 @@
+name: Nul-IP-check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  zero-ip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Geen playbook-content, IDs of secrets in deze publieke repo
+        run: python scripts/check_zero_ip.py

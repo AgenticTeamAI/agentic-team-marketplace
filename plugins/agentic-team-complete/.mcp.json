@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "agentic-team": {
+      "type": "http",
+      "url": "https://www.agentic-team.ai/api/mcp/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.license_key}"
+      }
+    }
+  }
+}
