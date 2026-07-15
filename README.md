@@ -17,6 +17,12 @@ De plugin bevat alleen de menukaart van je team. De playbooks zelf worden per we
 
 Na een release van nieuwe menukaart-versies: `/plugin update agentic-team-essentials` of `agentic-team-complete` (zie [CHANGELOG](CHANGELOG.md)).
 
+## Bekende eigenaardigheden (desktop-app)
+
+- **Update pakt oude versie?** De desktop-app cachet de marketplace-catalogus. Verwijder de *marketplace* (niet de plugin) en voeg hem opnieuw toe — dan is de catalogus vers en installeert de nieuwste versie. In Claude Code werkt `/plugin update` direct.
+- **Geen sleutelvraag bij installatie?** Klopt — gebruik je persoonlijke connector-URL (stap 3 hierboven). Zodra de desktop-app plugin-configuratie ondersteunt, vervalt die stap vanzelf.
+- Een oudere pluginversie is nooit blokkerend: playbooks komen altijd actueel van de server; alleen nieuwe *skills* vragen een plugin-update.
+
 ## Support
 
 support@agentic-team.ai · [agentic-team.ai](https://www.agentic-team.ai)
