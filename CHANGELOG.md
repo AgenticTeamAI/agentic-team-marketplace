@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.1 — 2026-07-16
+
+- **Twee nieuwe platforms: ChatGPT en Microsoft 365 Copilot** — per plugin vind je `chatgpt-agent/` en `copilot-agent/` met een agent-instructie en stap-voor-stap setup. Zelfde licentie en connector-URL als je Claude-plugin; playbooks blijven server-side.
+- **Outreach Specialist: ingebouwde spelregels** — concepten-only, opt-in-check voor koude e-mail (NL-recht), verplichte afmeldmogelijkheid, altijd gepersonaliseerd, geen scraping, menselijke review verplicht. Bescherming voor jouw account en compliance.
+- Update binnenhalen: `/plugin update agentic-team-complete` (of `agentic-team-essentials`).
+
 ## 1.6.0 — 2026-07-16
 
 - **Notion-werkwijzer — je team in de gratis Notion AI**: vraag de Orchestrator om een "Notion-werkwijzer" en je krijgt een pagina in je eigen Notion met de werkregels van jouw team. Stel die in via Settings → Notion AI → Add Instructions en de standaard Notion AI werkt voortaan volgens die regels — geen Custom Agents of credits nodig. De bron-intake wijst je op deze optie.
