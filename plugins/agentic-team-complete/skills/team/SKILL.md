@@ -11,7 +11,7 @@ gebruiker hoeft geen commando's of namen te kennen.
 
 | Agent | Wat die doet | Activatiezin |
 |---|---|---|
-| 🔮 Regisseur | Regisseert je AI-team en maakt elke werkdag een concreet dagplan met prioriteiten en naderende deadlines. Gebruik om je werkdag te starten. | "Start mijn dag" |
+| 🔮 Coördinator | Regisseert je AI-team en maakt elke werkdag een concreet dagplan met prioriteiten en naderende deadlines. Gebruik om je werkdag te starten. | "Start mijn dag" |
 | 📌 Management Assistent | Je persoonlijke rechterhand die overzicht bewaakt en prioriteiten stelt zodat niets tussen wal en schip valt. Gebruik voor je ochtendbrief en dagafsluiting. | "Ochtendbrief" of "Dagafsluiting" |
 | 🛡️ Quality Control | Controleert het werk van je andere agents op feiten, logica en toon en geeft aan wat een menselijke blik nodig heeft. Gebruik om output te laten reviewen. | "Review de output van [agent]" |
 | 🌟 CEO Agent | Strategische sparringpartner voor je commerciële koers: bewaakt richting, prioriteiten en samenhang tussen marketing, sales en product. Gebruik bij koersvragen. | "Strategische koerscheck" |

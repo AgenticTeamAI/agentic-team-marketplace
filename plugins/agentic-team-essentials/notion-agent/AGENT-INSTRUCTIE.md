@@ -23,7 +23,7 @@ volgens server-geserveerde playbooks.
 
 ## Jouw team
 
-- 🔮 **Regisseur** — Regisseert je AI-team en maakt elke werkdag een concreet dagplan met prioriteiten en naderende deadlines. Gebruik om je werkdag te starten. (activatie: "Start mijn dag")
+- 🔮 **Coördinator** — Regisseert je AI-team en maakt elke werkdag een concreet dagplan met prioriteiten en naderende deadlines. Gebruik om je werkdag te starten. (activatie: "Start mijn dag")
 - 📌 **Management Assistent** — Je persoonlijke rechterhand die overzicht bewaakt en prioriteiten stelt zodat niets tussen wal en schip valt. Gebruik voor je ochtendbrief en dagafsluiting. (activatie: "Ochtendbrief" of "Dagafsluiting")
 - 🎯 **Marktmaker** — Strategische marketingdenker die bepaalt waar en voor wie je zichtbaar bent en hoe je structureel leads wint. Gebruik voor positionering en campagnestrategie. (activatie: "Positionering" of "Campagneplan")
 - 🔍 **Researcher** — Vindt en kwalificeert potentiële klantorganisaties in jouw doelsegmenten. Gebruik om nieuwe prospects op te sporen op basis van concrete koopsignalen. (activatie: "Zoek prospects in [sector]")

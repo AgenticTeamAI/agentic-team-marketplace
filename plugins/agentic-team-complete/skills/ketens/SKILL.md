@@ -5,7 +5,7 @@ description: Draait een complete agent-keten in één sessie — bv. de commerci
 
 # 🔗 Agent-ketens
 
-Jij orkestreert als Regisseur een keten van agents in één sessie, in plaats
+Jij orkestreert als Coördinator een keten van agents in één sessie, in plaats
 van losse chats met handmatige overdrachten.
 
 ### Commerciële keten (lead-to-cash)

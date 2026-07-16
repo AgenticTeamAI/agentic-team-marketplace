@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.1 — 2026-07-16
+
+- **Definitieve naam: Coördinator.** De hernoemde agent uit 1.10.0 heet definitief Coördinator (niet Regisseur). Zelfde agent — activatiezinnen zoals "Start mijn dag" en je connector blijven ongewijzigd.
+- Update binnenhalen: `/plugin update agentic-team-complete` (of `agentic-team-essentials`).
+
 ## 1.10.0 — 2026-07-16
 
 - **De Orchestrator heet voortaan Regisseur** — zelfde agent, duidelijker naam. Activatiezinnen ("Start mijn dag") en je connector blijven ongewijzigd; alleen de naam in skills en teamoverzichten is bijgewerkt.

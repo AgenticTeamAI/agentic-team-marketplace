@@ -7,7 +7,7 @@ Officiële plugin-marketplace van [Agentic Team](https://www.agentic-team.ai): j
 1. Open Claude (chat, Cowork of Claude Code) → **Customize → Plugins** → voeg deze marketplace toe: `AgenticTeamAI/agentic-team-marketplace` — of in Claude Code: `/plugin marketplace add AgenticTeamAI/agentic-team-marketplace`
 2. Installeer de plugin die bij je licentie hoort: **agentic-team-essentials** (6 agents) of **agentic-team-complete** (18 agents) — die geeft je de agents als skills.
 3. **Verbind je persoonlijke connector** (werkt op claude.ai, desktop-app én Cowork): ga naar Instellingen → Connectors → *Add custom connector* en plak jouw persoonlijke connector-URL uit de wizard of welkomstmail (`https://www.agentic-team.ai/api/mcp/k/<jouw-sleutel>/mcp`). Behandel die URL als een wachtwoord. *Alternatief in Claude Code:* installeer de plugin met `--config license_key=<jouw sleutel>` — dan is de connector meteen mee geconfigureerd.
-4. Klaar. Zeg bijvoorbeeld *"Start mijn dag"* en de Regisseur gaat aan de slag.
+4. Klaar. Zeg bijvoorbeeld *"Start mijn dag"* en de Coördinator gaat aan de slag.
 
 **Tip:** plan *"Start mijn dag"* in als terugkerende taak in Claude (werkdagen, bv. 07:00) — dan ligt je dagplan elke ochtend klaar zonder dat je erom hoeft te vragen.
 
@@ -17,7 +17,7 @@ De plugin bevat alleen de menukaart van je team. De playbooks zelf worden per we
 
 Na een release van nieuwe menukaart-versies: `/plugin update agentic-team-essentials` of `agentic-team-complete` (zie [CHANGELOG](CHANGELOG.md)).
 
-Naast de agent-skills bevat elke plugin je agents ook als **subagents** (voor ketens die de Regisseur in één sessie draait), een `team`-skill ("welke agents heb ik?") en — in Complete — de `ketens`-skill.
+Naast de agent-skills bevat elke plugin je agents ook als **subagents** (voor ketens die de Coördinator in één sessie draait), een `team`-skill ("welke agents heb ik?") en — in Complete — de `ketens`-skill.
 
 ## Ook buiten Claude
 
@@ -29,7 +29,7 @@ Je team draait met dezelfde licentie en connector-URL ook op andere platforms. I
 | ChatGPT | `chatgpt-agent/` | Developer mode, alleen web, activeren per gesprek |
 | Microsoft 365 Copilot | `copilot-agent/` | Bouwen via Copilot Studio |
 
-**Gratis Notion-route:** vraag de Regisseur om de **Notion-werkwijzer** — een pagina die je instelt via Settings → Notion AI → Add Instructions, waarna de standaard Notion AI (zonder add-on) volgens de werkregels van jouw team werkt.
+**Gratis Notion-route:** vraag de Coördinator om de **Notion-werkwijzer** — een pagina die je instelt via Settings → Notion AI → Add Instructions, waarna de standaard Notion AI (zonder add-on) volgens de werkregels van jouw team werkt.
 
 ## Bekende eigenaardigheden (desktop-app)
 
