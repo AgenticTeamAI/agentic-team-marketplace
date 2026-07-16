@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.7.0 — 2026-07-16
+
+- Interne opruiming: platform-tiers samengevoegd tot de twee pakketten (essentials/complete). Geen functionele wijziging voor jou — bestaande licenties en connector-URLs blijven gewoon werken; updaten is optioneel.
+
 ## 1.6.1 — 2026-07-16
 
 - **Twee nieuwe platforms: ChatGPT en Microsoft 365 Copilot** — per plugin vind je `chatgpt-agent/` en `copilot-agent/` met een agent-instructie en stap-voor-stap setup. Zelfde licentie en connector-URL als je Claude-plugin; playbooks blijven server-side.
