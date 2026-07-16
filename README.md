@@ -17,6 +17,20 @@ De plugin bevat alleen de menukaart van je team. De playbooks zelf worden per we
 
 Na een release van nieuwe menukaart-versies: `/plugin update agentic-team-essentials` of `agentic-team-complete` (zie [CHANGELOG](CHANGELOG.md)).
 
+Naast de agent-skills bevat elke plugin je agents ook als **subagents** (voor ketens die de Orchestrator in één sessie draait), een `team`-skill ("welke agents heb ik?") en — in Complete — de `ketens`-skill.
+
+## Ook buiten Claude
+
+Je team draait met dezelfde licentie en connector-URL ook op andere platforms. In elke plugin-map vind je per platform een agent-instructie + stap-voor-stap setup:
+
+| Platform | Map | Let op |
+|---|---|---|
+| Notion (Custom Agent) | `notion-agent/` | Business/Enterprise + Custom Agents-credits |
+| ChatGPT | `chatgpt-agent/` | Developer mode, alleen web, activeren per gesprek |
+| Microsoft 365 Copilot | `copilot-agent/` | Bouwen via Copilot Studio |
+
+**Gratis Notion-route:** vraag de Orchestrator om de **Notion-werkwijzer** — een pagina die je instelt via Settings → Notion AI → Add Instructions, waarna de standaard Notion AI (zonder add-on) volgens de werkregels van jouw team werkt.
+
 ## Bekende eigenaardigheden (desktop-app)
 
 - **Update pakt oude versie?** De desktop-app cachet de marketplace-catalogus. Verwijder de *marketplace* (niet de plugin) en voeg hem opnieuw toe — dan is de catalogus vers en installeert de nieuwste versie. In Claude Code werkt `/plugin update` direct.
