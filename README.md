@@ -5,7 +5,7 @@ Officiële plugin-marketplace van [Agentic Team](https://www.agentic-team.ai): j
 ## Installatie (2 minuten)
 
 1. Open Claude (chat, Cowork of Claude Code) → **Customize → Plugins** → voeg deze marketplace toe: `AgenticTeamAI/agentic-team-marketplace` — of in Claude Code: `/plugin marketplace add AgenticTeamAI/agentic-team-marketplace`
-2. Installeer **agentic-team-complete** — die geeft je alle agents als skills, bij élk abonnement. Je licentie bepaalt welke modules (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice) actief zijn; een agent buiten je modules vertelt zelf welke module hem ontgrendelt. *(agentic-team-essentials is legacy en wordt niet meer verkocht.)*
+2. Installeer **agentic-team-complete** — die geeft je alle agents als skills, bij élk abonnement. Je licentie bepaalt welke modules (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice) actief zijn; een agent buiten je modules vertelt zelf welke module hem ontgrendelt.
 3. **Verbind je persoonlijke connector** (werkt op claude.ai, desktop-app én Cowork): ga naar Instellingen → Connectors → *Add custom connector* en plak jouw persoonlijke connector-URL uit de wizard of welkomstmail (`https://www.agentic-team.ai/api/mcp/k/<jouw-sleutel>/mcp`). Behandel die URL als een wachtwoord. *Alternatief in Claude Code:* installeer de plugin met `--config license_key=<jouw sleutel>` — dan is de connector meteen mee geconfigureerd.
 4. Klaar. Zeg bijvoorbeeld *"Start mijn dag"* en de Coördinator gaat aan de slag.
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.10.3 — 2026-07-17
+
+- **agentic-team-essentials verwijderd.** Er is nog één plugin: **agentic-team-complete** — je licentie bepaalt welke modules actief zijn. Had je essentials geïnstalleerd? Verwijder die en installeer agentic-team-complete; je connector en licentiesleutel blijven gewoon werken.
+
 ## 1.10.2 — 2026-07-17
 
 - Beschrijvingen en installatie-instructies vernieuwd naar de module-opzet: installeer altijd **agentic-team-complete**; je licentie bepaalt welke modules actief zijn.
