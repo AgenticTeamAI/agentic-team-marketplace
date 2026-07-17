@@ -1,4 +1,4 @@
-# Setup — Agentic Team Complete in ChatGPT
+# Setup — Agentic Team in ChatGPT
 
 Vereist: ChatGPT Plus, Pro, Business, Enterprise of Edu, op de **webversie**
 (custom connectors werken niet in de mobiele apps). Op Business/Enterprise/Edu

@@ -1,4 +1,4 @@
-# Agentic Team Complete — Notion Custom Agent
+# Agentic Team — Notion Custom Agent
 
 > Plak deze tekst als instructie van een Notion Custom Agent en koppel de Agentic Team MCP-connectie (zie SETUP.md). Vervang niets in deze tekst.
 

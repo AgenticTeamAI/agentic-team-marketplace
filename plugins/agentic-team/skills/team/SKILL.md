@@ -3,7 +3,7 @@ name: team
 description: Toont welke agents jouw Agentic Team bevat en hoe je ze activeert. Gebruik bij "welke agents heb ik", "wat kan mijn team", "toon mijn team", "help met mijn agents" of als de gebruiker niet weet welke agent hij nodig heeft.
 ---
 
-# Agentic Team Complete — jouw team
+# Agentic Team — jouw team
 
 Toon de gebruiker dit overzicht (of het relevante deel) en help kiezen welke
 agent bij de vraag past. Agents activeren vanzelf op hun activatiezin — de

@@ -1,4 +1,4 @@
-# Setup — Agentic Team Complete als Notion Custom Agent
+# Setup — Agentic Team als Notion Custom Agent
 
 Vereist: Notion Business of Enterprise (custom MCP-connecties), een
 workspace-admin, én het Custom Agents-add-on (credits, apart gefactureerd

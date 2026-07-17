@@ -1,4 +1,4 @@
-# Setup — Agentic Team Complete in Microsoft 365 Copilot
+# Setup — Agentic Team in Microsoft 365 Copilot
 
 Vereist: toegang tot **Copilot Studio** (maker-rechten in een Power
 Platform-omgeving) om de agent te bouwen, en een **Microsoft 365
