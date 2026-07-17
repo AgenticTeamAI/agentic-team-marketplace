@@ -1,6 +1,6 @@
 {
   "name": "agentic-team",
-  "description": "Jouw AI-team als Claude-plugin: agents voor dagstart, sales, marketing, financiën en operatie — playbooks altijd actueel via de beveiligde Agentic Team-connector.",
+  "description": "Jouw AI-team als Claude-plugin: een vaste Core plus modules voor groei, zichtbaarheid, sales, delivery, strategie en backoffice — playbooks altijd actueel via de beveiligde Agentic Team-connector.",
   "owner": {
     "name": "Agentic Team",
     "email": "support@agentic-team.ai"
@@ -9,8 +9,8 @@
     {
       "name": "agentic-team-essentials",
       "source": "./plugins/agentic-team-essentials",
-      "description": "Zes AI-agents voor dagstart, marktbewerking, prospects, pipeline en portfolio — het Agentic Team Essentials-pakket.",
-      "version": "1.10.1",
+      "description": "Legacy-pakket (wordt niet meer verkocht): zes AI-agents voor dagstart, marktbewerking, prospects, pipeline en portfolio. Nieuwe klanten installeren agentic-team-complete.",
+      "version": "1.10.2",
       "author": {
         "name": "Agentic Team"
       }
@@ -18,8 +18,8 @@
     {
       "name": "agentic-team-complete",
       "source": "./plugins/agentic-team-complete",
-      "description": "Het volledige AI-team van achttien agents: van dagstart en sales tot financiën, juridisch en delivery — Agentic Team Complete.",
-      "version": "1.10.1",
+      "description": "Het Agentic Team: achttien AI-agents in zeven teams (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice). Installeer deze plugin bij elk abonnement — je licentie bepaalt welke modules actief zijn.",
+      "version": "1.10.2",
       "author": {
         "name": "Agentic Team"
       }

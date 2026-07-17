@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.10.2 — 2026-07-17
+
+- Beschrijvingen en installatie-instructies vernieuwd naar de module-opzet: installeer altijd **agentic-team-complete**; je licentie bepaalt welke modules actief zijn.
+- **agentic-team-essentials** is gemarkeerd als legacy en wordt niet meer verkocht.
+
 ## 1.10.1 — 2026-07-16
 
 - **Definitieve naam: Coördinator.** De hernoemde agent uit 1.10.0 heet definitief Coördinator (niet Regisseur). Zelfde agent — activatiezinnen zoals "Start mijn dag" en je connector blijven ongewijzigd.
