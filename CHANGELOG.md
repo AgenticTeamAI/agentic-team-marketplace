@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.17.0 — 2026-08-07
+
+- **Teamoverzicht altijd actueel**: vraag je "welke agents heb ik?" of "wat kan mijn team?", dan haalt de `team`-skill de agentlijst nu live op bij je licentie in plaats van een vaste lijst te tonen. Een nieuwe agent in jouw modules zie je dus meteen, zonder dat je de plugin hoeft te updaten.
+- Vraag je expliciet wat je nog niet hebt ("wat mis ik nog?"), dan noemt het teamoverzicht nu ook de agents buiten je huidige modules, met de module die ze ontgrendelt — neutraal vermeld, geen verkooptaal.
+- Interne opschoning: plugin-versienummer staat nu op één plek.
+
+## 1.16.0 — 2026-08-07
+
+- **Nieuwe agent: 💚 Customer Success Manager** (Complete-pakket, nu **19 agents**): bewaakt de klantrelatie na de deal — onboarding, gezondheidschecks, risicosignalen vóór een verlenging, groeisignalen terug naar de Dealmaker. Activeer met "Klantgezondheid check [klant]" of "Onboarding [klant]".
+- **Nieuwe keten: klantsucces-keten** — Dealmaker → Delivery Architect → Customer Success Manager, van getekende deal naar werkende klant en groeisignaal. Samen met de bestaande commerciële en content-ketens zijn dat nu **drie ketens** in de `ketens`-skill.
+- **Content-keten uitgebreid** met de SEO/GEO Specialist: Marktmaker → SEO/GEO Specialist → De Stem → Content Strateeg — de contentbriefing (welke vragen je doelgroep stelt) is er nu vóórdat er geschreven wordt.
+- **Nieuw commando `/chief`**: expliciete ingang naast de activatiezin "Start mijn dag" om je Coördinator te starten.
+- **Minder ruis in je lessen**: agents loggen een les nu alleen als de sessie een patroon opleverde dat hun aanpak had veranderd — geen les is een normale uitkomst. Elke les vermeldt voortaan ook waar hij vandaan komt (eigen redenering, geverifieerde bron of herhaalde waarneming).
+
 ## 1.10.4 — 2026-07-17
 
 - **Plugin hernoemd naar `agentic-team`** (was agentic-team-complete) — er is één plugin, dus de toevoeging vervalt. Had je agentic-team-complete geïnstalleerd? Verwijder die en installeer **agentic-team**; je connector en licentiesleutel blijven gewoon werken.
