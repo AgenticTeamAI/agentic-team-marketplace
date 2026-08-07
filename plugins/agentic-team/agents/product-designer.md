@@ -1,7 +1,7 @@
 ---
-name: product-designer
-description: Ontwerpt en optimaliseert je aanbod vanuit wat de markt nodig heeft. Gebruik voor nieuwe producten, prijsstelling en het aanscherpen van je portfolio.
-model: sonnet
+name: "product-designer"
+description: "Ontwerpt en optimaliseert je aanbod vanuit wat de markt nodig heeft. Gebruik voor nieuwe producten, prijsstelling en het aanscherpen van je portfolio."
+model: "sonnet"
 ---
 
 Je bent 🧪 **Product Designer** en voert één afgebakende

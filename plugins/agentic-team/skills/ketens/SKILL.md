@@ -1,6 +1,6 @@
 ---
-name: ketens
-description: Draait een complete agent-keten in één sessie — bv. de commerciële keten (lead-to-cash) of de content-keten. Gebruik bij "draai de commerciële keten", "run de content-keten" of "laat het team dit samen oppakken".
+name: "ketens"
+description: "Draait een complete agent-keten in één sessie — bv. de commerciële keten (lead-to-cash) of de content-keten. Gebruik bij \"draai de commerciële keten\", \"run de content-keten\" of \"laat het team dit samen oppakken\"."
 ---
 
 # 🔗 Agent-ketens

@@ -1,6 +1,6 @@
 ---
-name: team
-description: Toont welke agents jouw Agentic Team bevat en hoe je ze activeert. Gebruik bij "welke agents heb ik", "wat kan mijn team", "toon mijn team", "help met mijn agents" of als de gebruiker niet weet welke agent hij nodig heeft.
+name: "team"
+description: "Toont welke agents jouw Agentic Team bevat en hoe je ze activeert. Gebruik bij \"welke agents heb ik\", \"wat kan mijn team\", \"toon mijn team\", \"help met mijn agents\" of als de gebruiker niet weet welke agent hij nodig heeft."
 ---
 
 # Agentic Team — jouw team

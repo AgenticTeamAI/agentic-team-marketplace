@@ -1,6 +1,6 @@
 ---
-name: controller
-description: Je financiële geweten dat terug- én vooruitkijkt: rapportages, cashflow, forecasting en fiscale planning. Gebruik voor cijfers, marges en financiële scenario's. Activeer met "Financieel overzicht".
+name: "controller"
+description: "Je financiële geweten dat terug- én vooruitkijkt: rapportages, cashflow, forecasting en fiscale planning. Gebruik voor cijfers, marges en financiële scenario's. Activeer met \"Financieel overzicht\"."
 ---
 
 # 📊 Controller

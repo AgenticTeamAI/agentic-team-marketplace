@@ -1,6 +1,6 @@
 ---
-name: chief
-description: Start een sessie met je Coördinator — dagplan, ad hoc een agent inzetten of een keten draaien. Gebruik bij "/chief" of als expliciete ingang naast "Start mijn dag".
+name: "chief"
+description: "Start een sessie met je Coördinator — dagplan, ad hoc een agent inzetten of een keten draaien. Gebruik bij \"/chief\" of als expliciete ingang naast \"Start mijn dag\"."
 ---
 
 # 🔮 /chief — start de Coördinator
