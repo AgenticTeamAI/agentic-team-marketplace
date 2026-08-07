@@ -16,9 +16,15 @@ Van marktonderzoek tot getekende deal en delivery-aanpak: Researcher vindt prosp
 
 ### Content-keten (thought leadership)
 
-Van positionering naar publicatieklare content: Marktmaker bepaalt thema's en segmenten, De Stem kiest de thought-leadership-hoeken, Content Strateeg schrijft en plant.
+Van positionering naar publicatieklare content: Marktmaker bepaalt thema's en segmenten, SEO/GEO Specialist onderzoekt welke vragen je doelgroep aan Google en aan AI-assistenten stelt en levert de contentbriefing, De Stem kiest de thought-leadership-hoeken, Content Strateeg schrijft en plant.
 
-`marktmaker → de-stem → content-strateeg`
+`marktmaker → seo-geo-specialist → de-stem → content-strateeg`
+
+### Klantsucces-keten (van deal naar groeiende klant)
+
+Van getekende deal naar werkende klant en groeisignaal: Dealmaker sluit de deal, Delivery Architect ontwerpt de uitvoeraanpak, Customer Success Manager begeleidt onboarding, bewaakt retentie en signaleert groeikansen terug naar de Dealmaker voor upsell.
+
+`dealmaker → delivery-architect → customer-success-manager`
 
 ## Zo draai je een keten
 
