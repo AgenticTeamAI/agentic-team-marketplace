@@ -9,6 +9,14 @@ Welke agents je hebt hangt af van je licentie, niet van deze plugin. Toon
 daarom altijd de actuele lijst — nooit een lijst uit je geheugen of een
 eerdere sessie.
 
+## Eerste keer? Eerst de Gids
+
+Gaf `check_license` `onboarding_voltooid: false` terug, of ontbreekt die vlag?
+Dan is de gebruiker nieuw. Wijs hem dan **eerst naar de Gids** ("typ: *hoe
+gebruik ik mijn team?*"): die maakt hem startklaar (verbinding, context,
+werkdata) — pas daarna heeft dit teamoverzicht echt nut. Is `onboarding_voltooid`
+al `true`, toon dan gewoon het team hieronder.
+
 ## Zo toon je het team
 
 1. Haal de agentlijst op via de `check_license`-tool van de Agentic
