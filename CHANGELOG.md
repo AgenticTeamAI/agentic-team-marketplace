@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.17.1 — 2026-08-09
+
+- **Connector-URL vereenvoudigd**: de plugin verbindt nu rechtstreeks met het beveiligde connector-endpoint; je licentiesleutel gaat via de `license_key`-config (zoals altijd). De oude URL met een `PLAK-HIER-JE-SLEUTEL`-placeholder is weg — die kon een verwarrende foutmelding geven als de sleutel nog niet was ingevuld.
+
 ## 1.17.0 — 2026-08-07
 
 - **Teamoverzicht altijd actueel**: vraag je "welke agents heb ik?" of "wat kan mijn team?", dan haalt de `team`-skill de agentlijst nu live op bij je licentie in plaats van een vaste lijst te tonen. Een nieuwe agent in jouw modules zie je dus meteen, zonder dat je de plugin hoeft te updaten.
