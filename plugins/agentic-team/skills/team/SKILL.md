@@ -22,9 +22,10 @@ al `true`, toon dan gewoon het team hieronder.
 1. Haal de agentlijst op via de `check_license`-tool van de Agentic
    Team-connector.
 2. Bouw daaruit een tabel met drie kolommen — **Agent**, **Inzetbaar voor**,
-   **Activatiezin** — met per agent zijn naam (met emoji), zijn
-   `dispatch.inzetbaar_voor` (of bij ontbreken zijn `description`) en zijn
-   activatiezin.
+   **Activatiezin** — met per agent zijn `naam` (met emoji), zijn
+   `inzetbaar_voor` (of bij ontbreken zijn `beschrijving`) en zijn
+   `activatiezin`. Die velden staan in de `check_license`-respons; verzin
+   nooit een activatiezin die er niet in staat.
 3. Help de gebruiker kiezen welke agent bij zijn vraag past. Agents
    activeren vanzelf op hun activatiezin — de gebruiker hoeft geen
    commando's of namen te kennen.
