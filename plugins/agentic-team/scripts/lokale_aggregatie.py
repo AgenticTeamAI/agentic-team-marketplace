@@ -12,7 +12,7 @@ klantmachine -- pas core/agents.json of build_plugin.py aan en genereer
 opnieuw (deterministisch: dezelfde registry geeft altijd byte-identieke
 uitvoer, dus alleen een echte registrywijziging verandert dit bestand).
 
-  registryVersion : 1.20.0
+  registryVersion : 1.21.0
   registry updated: 2026-08-15
 
 Contract: exact dezelfde nieteentien sleutels als de Notion-route levert
