@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.20.0 — 2026-08-19
+
+- **Werkgeheugen (Logboek)**: je team houdt nu één gedeeld logboek bij — sessielogs en lopende werkstukken (zoals conceptdocumenten) blijven vindbaar over sessies heen. Agents lezen bij de start van een sessie hun lopende werk terug en sluiten sessies met een wezenlijke uitkomst af met een logboek-entry. Bij de Notion-route komt de Logboek-database automatisch mee met de kernstructuur; de Coördinator of Gids richt hem éénmalig met je in.
+- De bron-intake legt nu ook vast wáár je logboek leeft (nieuw veld `werkgeheugen` in het databronnen-profiel); een profiel-update overschrijft voortaan alleen nog de velden die je wijzigt.
+- Plugin-metadata uitgebreid (licentie- en repository-veld) en de installatie-instructies volgen de actuele Claude-app.
+
 ## 1.17.1 — 2026-08-09
 
 - **Connector-URL vereenvoudigd**: de plugin verbindt nu rechtstreeks met het beveiligde connector-endpoint; je licentiesleutel gaat via de `license_key`-config (zoals altijd). De oude URL met een `PLAK-HIER-JE-SLEUTEL`-placeholder is weg — die kon een verwarrende foutmelding geven als de sleutel nog niet was ingevuld.
