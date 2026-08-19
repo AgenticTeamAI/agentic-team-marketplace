@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.21.0 — 2026-08-19
+
+- Interne verankering van de agent↔datadomein-koppeling in de registry. Geen functionele wijziging voor jou — updaten is optioneel.
+
 ## 1.20.0 — 2026-08-19
 
 - **Werkgeheugen (Logboek)**: je team houdt nu één gedeeld logboek bij — sessielogs en lopende werkstukken (zoals conceptdocumenten) blijven vindbaar over sessies heen. Agents lezen bij de start van een sessie hun lopende werk terug en sluiten sessies met een wezenlijke uitkomst af met een logboek-entry. Bij de Notion-route komt de Logboek-database automatisch mee met de kernstructuur; de Coördinator of Gids richt hem éénmalig met je in.
