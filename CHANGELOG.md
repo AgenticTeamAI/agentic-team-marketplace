@@ -47,11 +47,19 @@
 - **De Orchestrator heet voortaan Regisseur** — zelfde agent, duidelijker naam. Activatiezinnen ("Start mijn dag") en je connector blijven ongewijzigd; alleen de naam in skills en teamoverzichten is bijgewerkt.
 - Update binnenhalen: `/plugin update agentic-team-complete` (of `agentic-team-essentials`).
 
+## 1.9.0 — 2026-07-16
+
+- Niet apart uitgebracht: de wijzigingen van 1.9.0 zijn dezelfde dag meegegaan in 1.9.1 hieronder. (Entry achteraf toegevoegd 19-08-2026 om het versiegat in deze changelog te dichten.)
+
 ## 1.9.1 — 2026-07-16
 
 - **Modulair abonnement**: het team is opgebouwd uit een vaste Core met stapelbare modules (Growth, Visibility, Sales, Delivery, Strategy, Backoffice) en drie bundels Start / Scale / Complete. Je licentie bepaalt welke modules actief zijn; een agent buiten je modules vertelt precies welke module hem ontgrendelt.
 - **Teamgeheugen in de bron-intake**: de intake richt nu ook je eigen "Lessen & Inzichten" in — als vijfde database (Notion), als `lessen.json` (werkbestanden) of als vijfde kopje (document). Zo leest elke agent zijn eerdere lessen terug.
 - Update binnenhalen: `/plugin update agentic-team-complete` (of `agentic-team-essentials`).
+
+## 1.8.0 — 2026-07-16
+
+- **Fiscale normen actueel**: de Controller en Administratie rekenen met de actuele fiscale normbedragen. (Entry achteraf toegevoegd 19-08-2026; de release zelf was er wel, alleen de changelog-regel ontbrak.)
 
 ## 1.7.0 — 2026-07-16
 
