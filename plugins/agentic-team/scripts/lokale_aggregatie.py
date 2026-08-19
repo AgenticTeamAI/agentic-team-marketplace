@@ -12,7 +12,7 @@ klantmachine -- pas core/agents.json of build_plugin.py aan en genereer
 opnieuw (deterministisch: dezelfde registry geeft altijd byte-identieke
 uitvoer, dus alleen een echte registrywijziging verandert dit bestand).
 
-  registryVersion : 1.19.1
+  registryVersion : 1.20.0
   registry updated: 2026-08-15
 
 Contract: exact dezelfde nieteentien sleutels als de Notion-route levert
@@ -487,6 +487,36 @@ SCHEMA = {
         },
         {
           "naam": "Verwerkt in prompt?"
+        }
+      ]
+    },
+    "logboek": {
+      "naam": "Logboek",
+      "module": "core",
+      "velden": [
+        {
+          "naam": "Onderwerp"
+        },
+        {
+          "naam": "Agent"
+        },
+        {
+          "naam": "Type"
+        },
+        {
+          "naam": "Status"
+        },
+        {
+          "naam": "Datum"
+        },
+        {
+          "naam": "Resultaat"
+        },
+        {
+          "naam": "Link"
+        },
+        {
+          "naam": "Vervolg"
         }
       ]
     },

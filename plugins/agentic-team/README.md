@@ -6,7 +6,7 @@ Jouw AI-team als Claude-plugin: 20 agents in zeven teams (Core, Groei, Zichtbaar
 
 ## Installatie
 
-1. Voeg de marketplace toe — **Claude Code:** `/plugin marketplace add AgenticTeamAI/agentic-team-marketplace` · **claude.ai/desktop/Cowork:** Customize → Plugins → marketplace `AgenticTeamAI/agentic-team-marketplace`.
+1. Voeg de marketplace toe — **claude.ai/desktop/Cowork:** Settings → Plugins → Add → *Add marketplace* → *Add from a repository*: `AgenticTeamAI/agentic-team-marketplace` (zorg dat *Sync automatically* aanstaat) · **Claude Code:** `/plugin marketplace add AgenticTeamAI/agentic-team-marketplace`.
 2. Installeer **agentic-team**. In Claude Code kan dat direct mét je licentiesleutel: `--config license_key=<jouw sleutel>` — dan is de connector meteen geconfigureerd.
 3. Nog geen sleutel? Start op [agentic-team.ai](https://www.agentic-team.ai) — de wizard geeft je je persoonlijke sleutel en connector-link ("Verbind met Claude").
 
