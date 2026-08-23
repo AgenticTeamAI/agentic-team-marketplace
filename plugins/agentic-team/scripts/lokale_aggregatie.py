@@ -12,8 +12,8 @@ klantmachine -- pas core/agents.json of build_plugin.py aan en genereer
 opnieuw (deterministisch: dezelfde registry geeft altijd byte-identieke
 uitvoer, dus alleen een echte registrywijziging verandert dit bestand).
 
-  registryVersion : 1.21.0
-  registry updated: 2026-08-15
+  registryVersion : 1.29.0
+  registry updated: 2026-08-21
 
 Contract: exact dezelfde nieteentien sleutels als de Notion-route levert
 (zie core/base/orchestrator/prompt.md, fase dagelijkse-metrics, en het
@@ -274,6 +274,18 @@ SCHEMA = {
         },
         {
           "naam": "Actie Deadline"
+        },
+        {
+          "naam": "Bericht Tekst"
+        },
+        {
+          "naam": "Organisatie"
+        },
+        {
+          "naam": "Deal (link)"
+        },
+        {
+          "naam": "Actie doorgezet"
         }
       ]
     },
@@ -490,6 +502,27 @@ SCHEMA = {
         }
       ]
     },
+    "bedrijfscontext": {
+      "naam": "Bedrijfscontext",
+      "module": "core",
+      "velden": [
+        {
+          "naam": "Onderdeel"
+        },
+        {
+          "naam": "Inhoud"
+        },
+        {
+          "naam": "Versie"
+        },
+        {
+          "naam": "Bijgewerkt"
+        },
+        {
+          "naam": "Status"
+        }
+      ]
+    },
     "logboek": {
       "naam": "Logboek",
       "module": "core",
@@ -616,6 +649,54 @@ SCHEMA = {
         },
         {
           "naam": "Status"
+        },
+        {
+          "naam": "Type"
+        },
+        {
+          "naam": "Prioriteit"
+        },
+        {
+          "naam": "Toelichting"
+        },
+        {
+          "naam": "Aangemaakt door"
+        },
+        {
+          "naam": "Organisatie"
+        },
+        {
+          "naam": "Bron (link)"
+        }
+      ]
+    },
+    "ritmetaken": {
+      "naam": "Ritmetaken",
+      "module": "core",
+      "velden": [
+        {
+          "naam": "Taak"
+        },
+        {
+          "naam": "Agent"
+        },
+        {
+          "naam": "Ritme"
+        },
+        {
+          "naam": "Volgorde"
+        },
+        {
+          "naam": "Laatst gedraaid"
+        },
+        {
+          "naam": "Actief"
+        },
+        {
+          "naam": "Bron-template"
+        },
+        {
+          "naam": "Instructie"
         }
       ]
     },
@@ -667,6 +748,42 @@ SCHEMA = {
         },
         {
           "naam": "Besluit"
+        }
+      ]
+    },
+    "dashboard_metrics": {
+      "naam": "Dashboardmetrics",
+      "module": "core",
+      "velden": [
+        {
+          "naam": "Titel"
+        },
+        {
+          "naam": "Inhoud"
+        }
+      ]
+    },
+    "bronkoppeling": {
+      "naam": "Bronkoppeling",
+      "module": "core",
+      "velden": [
+        {
+          "naam": "Titel"
+        },
+        {
+          "naam": "Systeem"
+        },
+        {
+          "naam": "Verwijzing"
+        },
+        {
+          "naam": "Veldvertaling"
+        },
+        {
+          "naam": "Laatst_geverifieerd"
+        },
+        {
+          "naam": "Notitie"
         }
       ]
     }
