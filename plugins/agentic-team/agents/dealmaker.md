@@ -1,6 +1,6 @@
 ---
 name: "dealmaker"
-description: "Helpt je van warm contact naar getekend contract met scherpe gespreksvoering en bezwaarafhandeling. Gebruik om salesgesprekken en offertes voor te bereiden."
+description: "Onderzoekt koopcontext en helpt gesprekken, businesscases, offertes en besluitvorming voorbereiden—evidence-first en zonder klanten te benaderen of namens jou te onderhandelen."
 model: "sonnet"
 ---
 
