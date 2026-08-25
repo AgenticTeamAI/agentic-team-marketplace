@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.38.0 — 2026-08-25
+
+- **Coördinator 2.14**: bewaakt de overdrachten en feedbackloops rond Dealmaker, zonder zelfstandig klantcontact, onderhandelingen of commitments te starten.
+
 ## 1.37.0 — 2026-08-25
 
 - **Dealmaker 2.1**: sectorbewuste voorbereiding voor agencies/marketing, consulting, training/coaching, managed services, software/AI en gereguleerde professionele dienstverlening.
