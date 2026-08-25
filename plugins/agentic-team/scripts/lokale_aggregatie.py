@@ -12,8 +12,8 @@ klantmachine -- pas core/agents.json of build_plugin.py aan en genereer
 opnieuw (deterministisch: dezelfde registry geeft altijd byte-identieke
 uitvoer, dus alleen een echte registrywijziging verandert dit bestand).
 
-  registryVersion : 1.32.0
-  registry updated: 2026-08-24
+  registryVersion : 1.37.0
+  registry updated: 2026-08-25
 
 Contract: exact dezelfde nieteentien sleutels als de Notion-route levert
 (zie core/base/orchestrator/prompt.md, fase dagelijkse-metrics, en het
@@ -667,6 +667,18 @@ SCHEMA = {
         },
         {
           "naam": "Bron (link)"
+        },
+        {
+          "naam": "Afgerond door"
+        },
+        {
+          "naam": "Afgerond op"
+        },
+        {
+          "naam": "Gecorrigeerd"
+        },
+        {
+          "naam": "Correctie"
         }
       ]
     },
@@ -784,6 +796,27 @@ SCHEMA = {
         },
         {
           "naam": "Notitie"
+        }
+      ]
+    },
+    "teamfeed": {
+      "naam": "Teamfeed",
+      "module": "core",
+      "velden": [
+        {
+          "naam": "Actie"
+        },
+        {
+          "naam": "Agent"
+        },
+        {
+          "naam": "Soort"
+        },
+        {
+          "naam": "Bericht"
+        },
+        {
+          "naam": "Link"
         }
       ]
     }
@@ -1136,6 +1169,54 @@ def compute_acties_block(bundel, today):
     }
 
 
+def is_checkbox_true(v):
+    """Checkbox-waarde uit werkboek/JSON: True, 1, "true", "ja", "x", "__YES__"
+    (Notion-SQL) tellen als aangevinkt -- zelfde regel als het dashboard."""
+    if v is True or v == 1:
+        return True
+    return str(v or "").strip().lower() in ("true", "ja", "x", "__yes__", "1")
+
+
+def compute_correctievrij_block(bundel, today):
+    """i25 -- correctievrij-percentage (f9-succesmaat, f19-gate). Alleen
+    tellingen; percentage en gate rekent het dashboard zelf uit, zodat elke
+    route identiek rekent. Autonoom afgerond = Afgerond door gevuld en
+    Afgerond op binnen het venster; gecorrigeerd = Gecorrigeerd aangevinkt of
+    Status != Klaar (heropend). Weken = kalenderweken (maandag), laatste 5."""
+    dom = bundel.domains.get("acties")
+    if not dom:
+        return None
+    venster = 28
+    deze_maandag = today - timedelta(days=today.weekday())
+    week_van = deze_maandag - timedelta(days=28)
+    weken = {}
+    tot = {"autonoom_afgerond": 0, "gecorrigeerd": 0, "heropend": 0}
+    for r in dom["rows"]:
+        if not str(get_field(r, "Afgerond door") or "").strip():
+            continue
+        dt = parse_date_field(get_field(r, "Afgerond op"))
+        if not dt or dt > today:
+            continue
+        heropend = get_field(r, "Status") != "Klaar"
+        gecorrigeerd = heropend or is_checkbox_true(get_field(r, "Gecorrigeerd"))
+        if days_between(today, dt) < venster:
+            tot["autonoom_afgerond"] += 1
+            tot["gecorrigeerd"] += 1 if gecorrigeerd else 0
+            tot["heropend"] += 1 if heropend else 0
+        if dt >= week_van:
+            ws = (dt - timedelta(days=dt.weekday())).isoformat()
+            w = weken.setdefault(ws, {"week_start": ws, "autonoom_afgerond": 0, "gecorrigeerd": 0})
+            w["autonoom_afgerond"] += 1
+            w["gecorrigeerd"] += 1 if gecorrigeerd else 0
+    return {
+        "venster_dagen": venster,
+        "drempel_pct": 80,
+        **tot,
+        "weken": [weken[k] for k in sorted(weken)],
+        "opmerking": "Tellingen op de velden Afgerond door/Afgerond op/Gecorrigeerd/Status van Acties; percentage en gate rekent het dashboard.",
+    }
+
+
 def compute_sales_funnel_block(bundel):
     dom = bundel.domains.get("sales_funnel")
     if not dom:
@@ -1304,6 +1385,7 @@ def build_metrics(bundel, schema, today, weeks, minuten_per_actie, door):
 
     for key, value in (
         ("acties", compute_acties_block(bundel, today)),
+        ("correctievrij", compute_correctievrij_block(bundel, today)),
         ("sales_funnel", compute_sales_funnel_block(bundel)),
         ("content", compute_content_block(bundel, today, period_days)),
         ("klantsucces", compute_klantsucces_block(bundel)),
