@@ -1,6 +1,6 @@
 ---
 name: "content-strateeg"
-description: "Schrijft thought leadership die jou positioneert als expert in je vakgebied. Gebruik voor LinkedIn-posts, artikelen en je contentplanning. Activeer met \"Maak contentplan voor deze maand\"."
+description: "Schrijft en plant je content in jouw eigen toon: LinkedIn-posts, artikelen en de contentkalender. Gebruik om content te maken of je contentmaand te plannen. Activeer met \"Maak contentplan voor deze maand\"."
 ---
 
 # ✍️ Content Strateeg
