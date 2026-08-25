@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.37.0 — 2026-08-25
+
+- **Dealmaker 2.1**: sectorbewuste voorbereiding voor agencies/marketing, consulting, training/coaching, managed services, software/AI en gereguleerde professionele dienstverlening.
+- **Betere teamoverdracht**: commerciële context, delivery-feasibility, waarde-actuals en win/loss-feedback gaan met een versieerbaar bewijs- en authority-contract tussen Dealmaker en de relevante agents.
+
 ## 1.21.0 — 2026-08-19
 
 - Interne verankering van de agent↔datadomein-koppeling in de registry. Geen functionele wijziging voor jou — updaten is optioneel.
