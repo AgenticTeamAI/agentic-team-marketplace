@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.44.0 — 2026-08-25
+
+- **Content Strateeg**: duidelijker profiel — hij schrijft en plant je content (LinkedIn-posts, artikelen, contentkalender). "Thought leadership" hoort nu ondubbelzinnig bij De Stem, zodat op die vraag altijd de juiste agent aanslaat.
+
 ## 1.38.0 — 2026-08-25
 
 - **Coördinator 2.14**: bewaakt de overdrachten en feedbackloops rond Dealmaker, zonder zelfstandig klantcontact, onderhandelingen of commitments te starten.
