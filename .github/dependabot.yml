@@ -1,0 +1,10 @@
+# Houdt de SHA-pins van de GitHub Actions bij (backlog s28): een pin zonder
+# bijwerking bevriest de supply chain op een verouderde stand.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "chore(ci)"
