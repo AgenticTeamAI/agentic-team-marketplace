@@ -97,7 +97,9 @@ def getrackte_bestanden():
     except (subprocess.CalledProcessError, FileNotFoundError) as e:
         print(f"❌ Menukaart-check vereist een git-clone van deze repo ({e}).")
         sys.exit(1)
-    return sorted(p for p in out.decode("utf-8").split("\0") if p)
+    # Een geneste git-checkout (CI zet agent-architecture/ in de werkmap) komt
+    # bij --others als één map-entry terug; dat is geen bestand van deze repo.
+    return sorted(p for p in out.decode("utf-8").split("\0") if p and not (ROOT / p).is_dir())
 
 
 failures = []
