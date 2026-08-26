@@ -1,0 +1,121 @@
+name: Plugin-drift
+
+# s25: de gecommitte plugin hoort bij de gepinde arch-commit in
+# agent-architecture.lock.json (opnieuw gebouwd op precies die commit,
+# byte-gelijk), én de registry/generator op arch-main mag niet verder zijn
+# dan die pin — alleen core/agents.json, installer/build_plugin.py en
+# installer/registry.py: playbooks raken de plugin niet, en een gate die op
+# elke playbook-wijziging rood wordt, wordt genegeerd.
+# Draait in CI (workflow_call vanuit zero-ip.yml) én dagelijks: de drift
+# ontstaat zonder commit in deze repo. Uit agent-architecture wordt alleen
+# installer/build_plugin.py + registry.py gedraaid, op de gepinde commit.
+#
+# Cross-repo: vereist het repo-secret AGENT_ARCH_TOKEN (read-only PAT op
+# AgenticTeamAI/agent-architecture, zelfde als in site/werkruimte/dashboard)
+# — óók als Dependabot-secret. Publieke repo: fork-PR's krijgen het secret
+# niet en falen hier, bewust. Ontbreekt het secret, dan faalt de job hard:
+# een stil overgeslagen guard is een dode guard.
+on:
+  workflow_call:
+  schedule:
+    - cron: '41 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  plugin-drift:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+
+      - name: Secret aanwezig? (anders harde failure)
+        env:
+          TOKEN: ${{ secrets.AGENT_ARCH_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::plugin-drift kan niet draaien — repo-secret AGENT_ARCH_TOKEN ontbreekt (fine-grained PAT, read-access op AgenticTeamAI/agent-architecture; ook als Dependabot-secret zetten). Zonder deze guard loopt de publieke plugin ongemerkt achter op de registry."
+            exit 1
+          fi
+
+      # Lege/kapotte pin mag nooit stil doorlopen (checkout zonder ref valt
+      # terug op de default branch); waarden gevalideerd vóór ze output worden.
+      - name: Pin lezen
+        id: pin
+        run: |
+          set -euo pipefail
+          COMMIT=$(jq -er .commit agent-architecture.lock.json)
+          if ! [[ "$COMMIT" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "::error::agent-architecture.lock.json: commit ontbreekt of is geen 40-tekens SHA ('$COMMIT')."
+            exit 1
+          fi
+          # registryVersion in de lock is informatief (leesbaarheid); de
+          # inhoudelijke bewaking loopt via het manifest hieronder.
+          echo "pin $COMMIT (registry $(jq -r .registryVersion agent-architecture.lock.json))"
+          printf 'commit=%s\n' "$COMMIT" >> "$GITHUB_OUTPUT"
+
+      - name: Check out agent-architecture op de pin
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          repository: AgenticTeamAI/agent-architecture
+          ref: ${{ steps.pin.outputs.commit }}
+          token: ${{ secrets.AGENT_ARCH_TOKEN }}
+          path: agent-architecture
+
+      # Vóór er iets uit arch wordt uitgevoerd: de pin moet op arch-main staan
+      # (alleen gereviewde commits) en mag niet achterlopen op wat de plugin
+      # bepaalt.
+      - name: Pin staat op arch-main en de registry/generator loopt niet achter
+        env:
+          PIN: ${{ steps.pin.outputs.commit }}
+          GH_TOKEN: ${{ secrets.AGENT_ARCH_TOKEN }}
+        run: |
+          set -euo pipefail
+          # Ancestry via de compare-API: beide checkouts zijn shallow, dus
+          # merge-base --is-ancestor ziet geen gedeelde historie.
+          # Een 404 (pin onbekend op de remote) mag niet als lege status doorlopen.
+          STATUS=$(gh api "repos/AgenticTeamAI/agent-architecture/compare/$PIN...main" --jq .status 2>/dev/null || echo unknown)
+          case "$STATUS" in
+            identical|ahead) ;;
+            *) echo "::error::De pin $PIN staat niet op agent-architecture main (compare-status: $STATUS). Alleen commits op main mogen als pin dienen — draai 'python3 scripts/sync_plugin.py'."; exit 1 ;;
+          esac
+          git -C agent-architecture fetch -q --depth=1 origin main
+          set +e
+          git -C agent-architecture diff --quiet "$PIN" FETCH_HEAD -- core/agents.json installer/build_plugin.py installer/registry.py
+          rc=$?
+          set -e
+          case $rc in
+            0) echo "✅ pin $PIN staat op main en is actueel t.o.v. registry en generator" ;;
+            1) echo "::error::core/agents.json, installer/build_plugin.py of installer/registry.py in agent-architecture (main) is verder dan de gepinde commit $PIN — de publieke plugin loopt achter. Draai 'python3 scripts/sync_plugin.py' en commit plugins/, .claude-plugin/, plugin-manifest.json en agent-architecture.lock.json."
+               git -C agent-architecture diff --stat "$PIN" FETCH_HEAD -- core/agents.json installer/build_plugin.py installer/registry.py | tail -20 || true
+               exit 1 ;;
+            *) echo "::error::git diff faalde (exit $rc) — de driftcheck heeft NIET gedraaid."; exit 1 ;;
+          esac
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+
+      # Eén vergelijking volstaat: het manifest bevat de sha256 van élk
+      # gegenereerd bestand, en check_zero_ip.py bewijst daarna dat de repo
+      # byte-voor-byte bij dát manifest hoort (en niets extra's bevat).
+      - name: Gecommitte plugin = verse build op de pin
+        env:
+          PIN: ${{ steps.pin.outputs.commit }}
+        run: |
+          set -euo pipefail
+          python3 agent-architecture/installer/build_plugin.py --output /tmp/plugin-build > /dev/null
+          set +e
+          diff /tmp/plugin-build/plugin-manifest.json plugin-manifest.json > /tmp/plugin-diff.txt
+          rc=$?
+          set -e
+          if [ "$rc" -gt 1 ]; then echo "::error::diff faalde (exit $rc) — de vergelijking heeft NIET gedraaid."; exit 1; fi
+          if [ "$rc" -ne 0 ]; then
+            echo "::error::plugin-manifest.json wijkt af van wat installer/build_plugin.py op de gepinde commit $PIN oplevert. Draai 'python3 scripts/sync_plugin.py' (ná de merge in arch, op de main-SHA) en commit plugins/, .claude-plugin/, plugin-manifest.json en agent-architecture.lock.json."
+            head -40 /tmp/plugin-diff.txt || true
+            exit 1
+          fi
+          python3 scripts/check_zero_ip.py
+          echo "✅ plugin = registry $(jq -r .registryVersion plugin-manifest.json) @ $PIN"

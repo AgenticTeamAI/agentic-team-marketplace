@@ -2,7 +2,7 @@
 
 *Your AI business team as a Claude plugin (Dutch-language product). Requires an [Agentic Team](https://www.agentic-team.ai) license.*
 
-Jouw AI-team als Claude-plugin: 20 agents in zeven teams (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice). De plugin bevat de menukaart van je team; de playbooks zelf worden per werkfase en altijd actueel opgehaald via de beveiligde Agentic Team-connector. Je licentie bepaalt welke modules actief zijn.
+Jouw AI-team als Claude-plugin: 21 agents in zeven teams (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice). De plugin bevat de menukaart van je team; de playbooks zelf worden per werkfase en altijd actueel opgehaald via de beveiligde Agentic Team-connector. Je licentie bepaalt welke modules actief zijn.
 
 ## Installatie
 
@@ -16,6 +16,8 @@ Jouw AI-team als Claude-plugin: 20 agents in zeven teams (Core, Groei, Zichtbaar
 - **"Welke agents heb ik?"** (`team`-skill) toont live je agentlijst op basis van je licentie.
 - Elke agent heeft zijn eigen activatiezin; agents buiten je modules vertellen zelf welke module hen ontgrendelt.
 - Eerste keer? Je Gids 🧭 maakt je startklaar: *"Hoe gebruik ik mijn team?"*
+- Ketens ("draai de commerciële keten") laat je door de Coördinator draaien; welke ketens jouw team kent, vertelt `check_license`.
+- Even geen verbinding? De plugin bevat geen playbooks; zonder connector werkt alleen de Gids-hulp om je sleutel te koppelen. Bij een storing in de connector melden je agents dat eerlijk, werken ze hooguit 14 dagen door op de laatst opgehaalde playbook-versie en verzinnen ze nooit playbook-inhoud of data; blijft het misgaan, mail support@agentic-team.ai.
 
 ## Licentie & data
 

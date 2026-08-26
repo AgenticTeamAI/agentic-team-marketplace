@@ -29,7 +29,9 @@ De plugin bevat alleen de menukaart van je team. De playbooks zelf worden per we
 
 Nieuwe menukaart-versies komen vanzelf binnen zolang *Sync automatically* aanstaat (zie [CHANGELOG](CHANGELOG.md)); in Claude Code: `/plugin update agentic-team`.
 
-Naast de agent-skills bevat de plugin je agents ook als **subagents** (voor de ketens die de Coördinator in één sessie draait — commerciële, content- en klantsucces-keten), een `team`-skill ("welke agents heb ik?" — toont je actuele agentlijst live, op basis van je licentie), de `ketens`-skill en het `/chief`-commando (expliciete ingang naast "Start mijn dag" om je Coördinator te starten).
+Naast de agent-skills bevat de plugin je agents ook als **subagents** (zodat de Coördinator ketens in één sessie kan draaien), een `team`-skill ("welke agents heb ik?" — toont je actuele agentlijst live, op basis van je licentie), een `ketens`-skill (de ketennamen; welke ketens jouw team kent en hoe ze lopen, komt van de server) en de commando's `/chief` en `/gids`.
+
+**Wat hier bewust níet in staat (sinds 1.45):** de werkwijze van je agents, de ketenstappen, de cadans van de dagstart en de rekenlogica voor je dashboard. Dat wordt allemaal geserveerd via de connector of leeft in je werkruimte. Deze repo is de menukaart — niet meer. `plugin-manifest.json` somt op welke bestanden door de generator zijn gemaakt; de CI weigert alles wat daar niet in staat.
 
 ## Ook buiten Claude
 
@@ -48,6 +50,10 @@ Je team draait met dezelfde licentie en connector-URL ook op andere platforms. I
 - **Update pakt oude versie?** De desktop-app cachet de marketplace-catalogus. Verwijder de *marketplace* (niet de plugin) en voeg hem opnieuw toe — dan is de catalogus vers en installeert de nieuwste versie. In Claude Code werkt `/plugin update` direct.
 - **Geen sleutelvraag bij installatie?** Klopt — gebruik je persoonlijke connector-URL (stap 3 hierboven). Zodra de desktop-app plugin-configuratie ondersteunt, vervalt die stap vanzelf.
 - Een oudere pluginversie is nooit blokkerend: playbooks komen altijd actueel van de server; alleen nieuwe *skills* vragen een plugin-update.
+
+## Voor ontwikkelaars: hoe deze repo wordt bijgewerkt
+
+Alles onder `plugins/` en `.claude-plugin/` is gegenereerd door `installer/build_plugin.py` uit de privé-repo `agent-architecture`, op de commit in `agent-architecture.lock.json`. Bijwerken: **altijd ná de merge in arch, op de main-SHA — nooit vanaf een feature-branch**: `python3 scripts/sync_plugin.py` (bouwt op een commit van arch-main, schrijft precies de manifest-bestanden en de lock), daarna `python3 scripts/check_zero_ip.py`. Volgorde bij een release: eerst de site deployen die de velden uit `serverContract` in `plugin-manifest.json` serveert (`check_license`: `ketens`, `volgende_stap`), dán syncen — anders verwijzen de stubs naar velden die de server nog niet kent. CI: de menukaart-check (allowlist via het manifest + patroonchecks) op elke PR, en de driftgate `plugin-drift` (verse build op de gepinde commit moet hetzelfde manifest opleveren; arch-main mag niet verder zijn dan de pin) op elke PR én dagelijks.
 
 ## Support
 
