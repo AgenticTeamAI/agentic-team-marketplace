@@ -17,7 +17,7 @@ Jouw AI-team als Claude-plugin: 20 agents in zeven teams (Core, Groei, Zichtbaar
 - Elke agent heeft zijn eigen activatiezin; agents buiten je modules vertellen zelf welke module hen ontgrendelt.
 - Eerste keer? Je Gids 🧭 maakt je startklaar: *"Hoe gebruik ik mijn team?"*
 - Ketens ("draai de commerciële keten") laat je door de Coördinator draaien; welke ketens jouw team kent, vertelt `check_license`.
-- Even geen verbinding? De plugin bevat geen playbooks; zonder connector werkt alleen de Gids-hulp om je sleutel te koppelen. Blijft het misgaan: support@agentic-team.ai.
+- Even geen verbinding? De plugin bevat geen playbooks; zonder connector werkt alleen de Gids-hulp om je sleutel te koppelen. Bij een storing in de connector melden je agents dat eerlijk, werken ze hooguit 14 dagen door op de laatst opgehaalde playbook-versie en verzinnen ze nooit playbook-inhoud of data; blijft het misgaan, mail support@agentic-team.ai.
 
 ## Licentie & data
 

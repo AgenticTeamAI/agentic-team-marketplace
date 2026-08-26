@@ -1,0 +1,4 @@
+# s25: gegenereerde bestanden worden op elk platform met LF geschreven
+# (build_plugin.py, newline="\n"); zonder deze regel zou een Windows-checkout
+# CRLF in de werkmap zetten en kloppen de sha256s in plugin-manifest.json niet.
+* text=auto eol=lf

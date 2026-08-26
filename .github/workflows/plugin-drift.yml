@@ -47,16 +47,14 @@ jobs:
         run: |
           set -euo pipefail
           COMMIT=$(jq -er .commit agent-architecture.lock.json)
-          VERSIE=$(jq -er .registryVersion agent-architecture.lock.json)
           if ! [[ "$COMMIT" =~ ^[0-9a-f]{40}$ ]]; then
             echo "::error::agent-architecture.lock.json: commit ontbreekt of is geen 40-tekens SHA ('$COMMIT')."
             exit 1
           fi
-          if ! [[ "$VERSIE" =~ ^[0-9A-Za-z.+-]+$ ]]; then
-            echo "::error::agent-architecture.lock.json: registryVersion heeft een onverwachte vorm ('$VERSIE')."
-            exit 1
-          fi
-          printf 'commit=%s\nversie=%s\n' "$COMMIT" "$VERSIE" >> "$GITHUB_OUTPUT"
+          # registryVersion in de lock is informatief (leesbaarheid); de
+          # inhoudelijke bewaking loopt via het manifest hieronder.
+          echo "pin $COMMIT (registry $(jq -r .registryVersion agent-architecture.lock.json))"
+          printf 'commit=%s\n' "$COMMIT" >> "$GITHUB_OUTPUT"
 
       - name: Check out agent-architecture op de pin
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
@@ -77,7 +75,8 @@ jobs:
           set -euo pipefail
           # Ancestry via de compare-API: beide checkouts zijn shallow, dus
           # merge-base --is-ancestor ziet geen gedeelde historie.
-          STATUS=$(gh api "repos/AgenticTeamAI/agent-architecture/compare/$PIN...main" --jq .status)
+          # Een 404 (pin onbekend op de remote) mag niet als lege status doorlopen.
+          STATUS=$(gh api "repos/AgenticTeamAI/agent-architecture/compare/$PIN...main" --jq .status 2>/dev/null || echo unknown)
           case "$STATUS" in
             identical|ahead) ;;
             *) echo "::error::De pin $PIN staat niet op agent-architecture main (compare-status: $STATUS). Alleen commits op main mogen als pin dienen — draai 'python3 scripts/sync_plugin.py'."; exit 1 ;;
@@ -99,32 +98,24 @@ jobs:
         with:
           python-version: '3.12'
 
+      # Eén vergelijking volstaat: het manifest bevat de sha256 van élk
+      # gegenereerd bestand, en check_zero_ip.py bewijst daarna dat de repo
+      # byte-voor-byte bij dát manifest hoort (en niets extra's bevat).
       - name: Gecommitte plugin = verse build op de pin
         env:
           PIN: ${{ steps.pin.outputs.commit }}
-          VERSIE: ${{ steps.pin.outputs.versie }}
         run: |
           set -euo pipefail
           python3 agent-architecture/installer/build_plugin.py --output /tmp/plugin-build > /dev/null
           set +e
-          diff -r /tmp/plugin-build/plugins plugins > /tmp/plugin-diff.txt
-          rc1=$?
-          diff /tmp/plugin-build/.claude-plugin/marketplace.json .claude-plugin/marketplace.json >> /tmp/plugin-diff.txt
-          rc2=$?
-          diff /tmp/plugin-build/plugin-manifest.json plugin-manifest.json >> /tmp/plugin-diff.txt
-          rc3=$?
+          diff /tmp/plugin-build/plugin-manifest.json plugin-manifest.json > /tmp/plugin-diff.txt
+          rc=$?
           set -e
-          for rc in $rc1 $rc2 $rc3; do
-            if [ "$rc" -gt 1 ]; then echo "::error::diff faalde (exit $rc) — de vergelijking heeft NIET gedraaid."; exit 1; fi
-          done
-          if [ "$rc1$rc2$rc3" != "000" ]; then
-            echo "::error::De gecommitte plugin wijkt af van wat installer/build_plugin.py op de gepinde commit $PIN oplevert. Draai 'python3 scripts/sync_plugin.py' en commit plugins/, .claude-plugin/, plugin-manifest.json en agent-architecture.lock.json."
+          if [ "$rc" -gt 1 ]; then echo "::error::diff faalde (exit $rc) — de vergelijking heeft NIET gedraaid."; exit 1; fi
+          if [ "$rc" -ne 0 ]; then
+            echo "::error::plugin-manifest.json wijkt af van wat installer/build_plugin.py op de gepinde commit $PIN oplevert. Draai 'python3 scripts/sync_plugin.py' (ná de merge in arch, op de main-SHA) en commit plugins/, .claude-plugin/, plugin-manifest.json en agent-architecture.lock.json."
             head -40 /tmp/plugin-diff.txt || true
             exit 1
           fi
-          MANIFEST=$(jq -er .registryVersion plugin-manifest.json)
-          if [ "$MANIFEST" != "$VERSIE" ]; then
-            echo "::error::registryVersion in plugin-manifest.json ($MANIFEST) ≠ agent-architecture.lock.json ($VERSIE). Draai 'python3 scripts/sync_plugin.py'."
-            exit 1
-          fi
-          echo "✅ plugin = registry $VERSIE @ $PIN"
+          python3 scripts/check_zero_ip.py
+          echo "✅ plugin = registry $(jq -r .registryVersion plugin-manifest.json) @ $PIN"

@@ -31,4 +31,6 @@ stukje werkt zonder verbinding:
 3. Zodra `check_license` weer een geldig antwoord geeft, ga je verder met de
    startklaar-check uit het playbook.
 
+Bij een storing in de connector melden je agents dat eerlijk, werken ze hooguit 14 dagen door op de laatst opgehaalde playbook-versie en verzinnen ze nooit playbook-inhoud of data; blijft het misgaan, mail support@agentic-team.ai.
+
 Activatie: "Hoe gebruik ik mijn team?"

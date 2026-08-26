@@ -52,5 +52,4 @@ Bij een keten-verzoek haal je het playbook van de Coördinator (`orchestrator`) 
 - **Content-keten (thought leadership)**
 - **Klantsucces-keten (van deal naar groeiende klant)**
 
-Storing in de connectie? Meld het eerlijk, werk verder met wat de gebruiker
-aanreikt en verzin nooit playbook-inhoud of data.
+Bij een storing in de connector melden je agents dat eerlijk, werken ze hooguit 14 dagen door op de laatst opgehaalde playbook-versie en verzinnen ze nooit playbook-inhoud of data; blijft het misgaan, mail support@agentic-team.ai.

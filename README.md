@@ -53,7 +53,7 @@ Je team draait met dezelfde licentie en connector-URL ook op andere platforms. I
 
 ## Voor ontwikkelaars: hoe deze repo wordt bijgewerkt
 
-Alles onder `plugins/` en `.claude-plugin/` is gegenereerd door `installer/build_plugin.py` uit de privé-repo `agent-architecture`, op de commit in `agent-architecture.lock.json`. Bijwerken: `python3 scripts/sync_plugin.py` (bouwt op een commit van arch-main en schrijft de lock), daarna `python3 scripts/check_zero_ip.py`. CI: de menukaart-check (allowlist via het manifest + patroonchecks) op elke PR, en de driftgate `plugin-drift` (verse build op de gepinde commit moet byte-gelijk zijn; arch-main mag niet verder zijn dan de pin) op elke PR én dagelijks.
+Alles onder `plugins/` en `.claude-plugin/` is gegenereerd door `installer/build_plugin.py` uit de privé-repo `agent-architecture`, op de commit in `agent-architecture.lock.json`. Bijwerken: **altijd ná de merge in arch, op de main-SHA — nooit vanaf een feature-branch**: `python3 scripts/sync_plugin.py` (bouwt op een commit van arch-main, schrijft precies de manifest-bestanden en de lock), daarna `python3 scripts/check_zero_ip.py`. Volgorde bij een release: eerst de site deployen die de velden uit `serverContract` in `plugin-manifest.json` serveert (`check_license`: `ketens`, `volgende_stap`), dán syncen — anders verwijzen de stubs naar velden die de server nog niet kent. CI: de menukaart-check (allowlist via het manifest + patroonchecks) op elke PR, en de driftgate `plugin-drift` (verse build op de gepinde commit moet hetzelfde manifest opleveren; arch-main mag niet verder zijn dan de pin) op elke PR én dagelijks.
 
 ## Support
 
