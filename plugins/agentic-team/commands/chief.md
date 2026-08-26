@@ -14,6 +14,3 @@ alleen als los commando aan te roepen.
 2. **Volg het playbook** voor de rol van Coördinator:
    dagplan, ad hoc een specifieke agent inzetten, of een keten draaien — laat
    de gebruiker sturen wat er vandaag nodig is.
-3. **Bij storing**: gebruik de laatst opgehaalde versie uit deze sessie of je
-   projectkennis (maximaal 14 dagen oud) en meld dat je op een gecachte versie
-   draait.

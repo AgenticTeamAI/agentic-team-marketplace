@@ -16,6 +16,8 @@ Jouw AI-team als Claude-plugin: 20 agents in zeven teams (Core, Groei, Zichtbaar
 - **"Welke agents heb ik?"** (`team`-skill) toont live je agentlijst op basis van je licentie.
 - Elke agent heeft zijn eigen activatiezin; agents buiten je modules vertellen zelf welke module hen ontgrendelt.
 - Eerste keer? Je Gids 🧭 maakt je startklaar: *"Hoe gebruik ik mijn team?"*
+- Ketens ("draai de commerciële keten") laat je door de Coördinator draaien; welke ketens jouw team kent, vertelt `check_license`.
+- Even geen verbinding? De plugin bevat geen playbooks; zonder connector werkt alleen de Gids-hulp om je sleutel te koppelen. Blijft het misgaan: support@agentic-team.ai.
 
 ## Licentie & data
 

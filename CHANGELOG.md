@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.45.0 — 2026-08-26
+
+- **Alleen nog de menukaart.** De plugin bevat voortaan uitsluitend je agentlijst en de ophaal-instructies; de werkwijze van je agents, de ketens (stappen en aanpak), de dagstart-cadans en de dashboardrekenlogica komen van de server of leven in je werkruimte. Voor jou verandert er niets aan hoe je werkt — alles wat je agents doen, halen ze al live op.
+- `check_license` vertelt nu ook welke **ketens** jouw team kan draaien en, bij een team dat nog niet is ingericht, wat de **volgende stap** is (de Gids).
+- `scripts/lokale_aggregatie.py` is verwijderd: elke klant heeft een werkruimte die de dashboardcijfers zelf berekent. Werk je nog met een werkboek of losse bestanden? Vraag je Coördinator om de migratie naar de werkruimte.
+- Notion-/ChatGPT-/Copilot-instructies zijn korter geworden; plak de nieuwe tekst één keer opnieuw.
+- Nieuw voor ontwikkelaars: `plugin-manifest.json` + `agent-architecture.lock.json` — de CI bewaakt dat elk bestand door de generator is gemaakt en bij de gepinde registry hoort.
+
 ## 1.44.0 — 2026-08-25
 
 - **Content Strateeg**: duidelijker profiel — hij schrijft en plant je content (LinkedIn-posts, artikelen, contentkalender). "Thought leadership" hoort nu ondubbelzinnig bij De Stem, zodat op die vraag altijd de juiste agent aanslaat.
