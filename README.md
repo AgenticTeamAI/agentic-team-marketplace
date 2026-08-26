@@ -52,3 +52,11 @@ Je team draait met dezelfde licentie en connector-URL ook op andere platforms. I
 ## Support
 
 support@agentic-team.ai · [agentic-team.ai](https://www.agentic-team.ai)
+
+## Licentie
+
+Deze repository is bron-inzage (source-available), niet open source: lezen en
+bestuderen mag iedereen, gebruiken mag met een geldige Agentic Team-licentie,
+herpubliceren of doorverkopen niet. Zie [LICENSE](LICENSE) en
+[NOTICE](NOTICE). De licentietekst is een concept in afwachting van
+juridische beoordeling (gemarkeerd met `<<JURIST-REVIEW>>`).
