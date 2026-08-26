@@ -43,6 +43,7 @@ volgens server-geserveerde playbooks.
 - 📋 **Administratie** — Houdt je administratie op orde: elke factuur verstuurd en betaald, elk uur verantwoord. Gebruik voor facturatie, debiteurenbeheer en urenregistratie. (activatie: "Facturatie-overzicht")
 - 🧲 **SEO/GEO Specialist** — Bepaalt welke onderwerpen vindbaarheid opleveren vóórdat er geschreven wordt, en toetst achteraf of pagina's gevonden worden — in Google én in AI-assistenten zoals ChatGPT en Perplexity. (activatie: "Welke onderwerpen moet ik schrijven?" of "SEO/GEO-audit")
 - 💚 **Customer Success Manager** — Bewaakt de klantrelatie na de deal: begeleidt onboarding, signaleert retentierisico's, herkent groeikansen en verwerkt klantfeedback. Gebruik voor health-checks en verlengingen. (activatie: "Klantgezondheid check [klant]" of "Onboarding [klant]")
+- 🖥️ **Informatiemanager** — Bewaakt je digitale werkomgeving: de juiste tools, betrouwbare data en actuele kennis. Gebruik voor toolkeuzes, toolstack- en security-audits, datakwaliteit en het opschonen van je kennisbank. (activatie: "Toolstack-check", "Nieuwe tool nodig", "Datakwaliteit-review" of "Kennisbank-check")
 
 ## Ketens
 

@@ -2,7 +2,7 @@
 
 *Your AI business team as a Claude plugin (Dutch-language product). Requires an [Agentic Team](https://www.agentic-team.ai) license.*
 
-Jouw AI-team als Claude-plugin: 20 agents in zeven teams (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice). De plugin bevat de menukaart van je team; de playbooks zelf worden per werkfase en altijd actueel opgehaald via de beveiligde Agentic Team-connector. Je licentie bepaalt welke modules actief zijn.
+Jouw AI-team als Claude-plugin: 21 agents in zeven teams (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice). De plugin bevat de menukaart van je team; de playbooks zelf worden per werkfase en altijd actueel opgehaald via de beveiligde Agentic Team-connector. Je licentie bepaalt welke modules actief zijn.
 
 ## Installatie
 

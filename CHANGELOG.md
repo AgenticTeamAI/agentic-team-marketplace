@@ -1,7 +1,8 @@
 # Changelog
 
-## 1.45.0 — 2026-08-26
+## 1.46.0 — 2026-08-26
 
+- **Nieuwe agent: Informatiemanager** (module Backoffice) — bewaakt je toolstack, datakwaliteit en kennisbank. Verschijnt automatisch in je menukaart zodra je licentie de module Backoffice bevat.
 - **Alleen nog de menukaart.** De plugin bevat voortaan uitsluitend je agentlijst en de ophaal-instructies; de werkwijze van je agents, de ketens (stappen en aanpak), de dagstart-cadans en de dashboardrekenlogica komen van de server of leven in je werkruimte. Voor jou verandert er niets aan hoe je werkt — alles wat je agents doen, halen ze al live op.
 - `check_license` vertelt nu ook welke **ketens** jouw team kan draaien en, bij een team dat nog niet is ingericht, wat de **volgende stap** is (de Gids).
 - `scripts/lokale_aggregatie.py` is verwijderd: elke klant heeft een werkruimte die de dashboardcijfers zelf berekent. Werk je nog met een werkboek of losse bestanden? Vraag je Coördinator om de migratie naar de werkruimte.

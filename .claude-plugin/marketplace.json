@@ -9,7 +9,7 @@
     {
       "name": "agentic-team",
       "source": "./plugins/agentic-team",
-      "description": "Het Agentic Team: 20 AI-agents in zeven teams (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice). Installeer deze plugin bij elk abonnement — je licentie bepaalt welke modules actief zijn.",
+      "description": "Het Agentic Team: 21 AI-agents in zeven teams (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice). Installeer deze plugin bij elk abonnement — je licentie bepaalt welke modules actief zijn.",
       "author": {
         "name": "Agentic Team"
       }
