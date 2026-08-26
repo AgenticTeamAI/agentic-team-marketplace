@@ -14,6 +14,22 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 
+# s32: op een Windows-console met codepage 1252 laat print("✅ …") het
+# script met een UnicodeEncodeError omvallen — dan lijkt een schone check
+# gefaald. Zelfde aanpak als installer/registry.py in agent-architecture:
+# encoding met rust laten, alleen de foutafhandeling op "replace".
+for _stream in (sys.stdout, sys.stderr):
+    _reconfigure = getattr(_stream, "reconfigure", None)
+    if _reconfigure is None:
+        continue
+    try:
+        "✅".encode(_stream.encoding or "utf-8")
+    except (UnicodeEncodeError, LookupError):
+        try:
+            _reconfigure(errors="replace")
+        except (ValueError, OSError):
+            pass
+
 PATTERNS = [
     (re.compile(r"<!--\s*phase:"), "fase-marker (playbook-content!)"),
     (re.compile(r"\{\{[A-Z0-9_]+\}\}"), "prompt-placeholder"),

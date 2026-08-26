@@ -1,0 +1,36 @@
+NOTICE — agentic-team-marketplace
+(s33, 26-08-2026; concept, zie <<JURIST-REVIEW>> in LICENSE)
+
+Agentic Team — Plugin Marketplace
+Copyright (c) 2026 Obeya Insights B.V. Alle rechten voorbehouden.
+Licentie: zie LICENSE (bron-inzage, proprietary).
+
+Onderdelen van derden
+---------------------
+Deze repository bundelt geen code van derden: er is geen package.json,
+requirements-bestand of vendor-map. De inhoud bestaat uit menukaart-tekst
+(plugin-manifest, skills, agents, commands, platform-instructies) en één
+controlescript (scripts/check_zero_ip.py) dat alleen de Python-
+standaardbibliotheek gebruikt (Python Software Foundation License).
+
+Runtime-afhankelijkheden buiten deze repository
+-----------------------------------------------
+- De plugin draait binnen Claude (Anthropic) en, via de platform-mappen,
+  binnen Notion, ChatGPT (OpenAI) en GitHub Copilot. Die platforms vallen
+  onder de voorwaarden van hun aanbieders; zij maken geen deel uit van de
+  Software.
+- De playbooks worden server-side geserveerd via de Agentic Team-connector
+  en staan niet in deze repository.
+
+Merken
+------
+Claude en Anthropic zijn merken van Anthropic, PBC. Notion, ChatGPT/OpenAI
+en GitHub Copilot zijn merken van hun respectieve eigenaren. Vermelding
+dient uitsluitend ter identificatie; er is geen sponsoring of goedkeuring
+door die partijen.
+
+Bijwerken van dit bestand
+-------------------------
+Komt er ooit een package.json of andere afhankelijkheidslijst in deze repo,
+genereer dan hier een lijst per pakket (naam, versie, licentie) — zie
+agentic-team-dashboard/NOTICE voor het patroon.
