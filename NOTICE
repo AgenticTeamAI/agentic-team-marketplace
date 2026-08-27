@@ -1,17 +1,28 @@
 NOTICE — agentic-team-marketplace
-(s33, 26-08-2026; concept, zie <<JURIST-REVIEW>> in LICENSE)
+(s33, 26-08-2026; juristadvies van 26-08-2026 verwerkt op 27-08-2026 —
+concept, zie <<JURIST-REVIEW>> in LICENSE)
 
 Agentic Team — Plugin Marketplace
 Copyright (c) 2026 Obeya Insights B.V. Alle rechten voorbehouden.
-Licentie: zie LICENSE (bron-inzage, proprietary).
+Licentie: zie LICENSE (bron-inzage, proprietary) en LICENSE.en.md
+(Engelse vertaling; bij verschil gaat de Nederlandse tekst voor).
 
-Onderdelen van derden
----------------------
-Deze repository bundelt geen code van derden: er is geen package.json,
-requirements-bestand of vendor-map. De inhoud bestaat uit menukaart-tekst
-(plugin-manifest, skills, agents, commands, platform-instructies) en één
-controlescript (scripts/check_zero_ip.py) dat alleen de Python-
-standaardbibliotheek gebruikt (Python Software Foundation License).
+Onderdelen van derden: geen
+---------------------------
+Deze repository bundelt geen code, fonts of afbeeldingen van derden: er is
+geen package.json, requirements-bestand of vendor-map, en er wordt niets
+uitgeleverd wat niet in deze repo staat. De inhoud bestaat uit
+menukaart-tekst (plugin-manifest, skills, agents, commands,
+platform-instructies) en één controlescript (scripts/check_zero_ip.py) dat
+alleen de Python-standaardbibliotheek gebruikt (SPDX: Python-2.0).
+
+Omdat er niets van derden wordt gedistribueerd, is er ook geen
+attributieplicht: de permissieve licenties (MIT, ISC, BSD, Apache-2.0)
+activeren hun vermeldingsplicht bij distributie.
+
+Vastgesteld op 27-08-2026 door inspectie van de repo-inhoud (geen
+afhankelijkheidsbestand aanwezig); de CI-poorten zero-ip en plugin-drift
+bewaken dat er niets buiten het gegenereerde manifest bij komt.
 
 Runtime-afhankelijkheden buiten deze repository
 -----------------------------------------------
@@ -32,5 +43,7 @@ door die partijen.
 Bijwerken van dit bestand
 -------------------------
 Komt er ooit een package.json of andere afhankelijkheidslijst in deze repo,
-genereer dan hier een lijst per pakket (naam, versie, licentie) — zie
-agentic-team-dashboard/NOTICE voor het patroon.
+genereer dan hier een lijst per pakket (naam, versie, SPDX-identifier), met
+een generatiestempel (datum + hoe gegenereerd) en het label of de pakketten
+wél of niet worden gedistribueerd — zie agentic-team-dashboard/NOTICE voor
+het patroon.
