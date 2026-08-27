@@ -61,8 +61,30 @@ support@agentic-team.ai · [agentic-team.ai](https://www.agentic-team.ai)
 
 ## Licentie
 
-Deze repository is bron-inzage (source-available), niet open source: lezen en
-bestuderen mag iedereen, gebruiken mag met een geldige Agentic Team-licentie,
-herpubliceren of doorverkopen niet. Zie [LICENSE](LICENSE) en
-[NOTICE](NOTICE). De licentietekst is een concept in afwachting van
-juridische beoordeling (gemarkeerd met `<<JURIST-REVIEW>>`).
+Deze repository is **bron-inzage (source-available), niet open source**: lezen
+en bestuderen mag iedereen, gebruiken mag met een geldige Agentic
+Team-licentie, herpubliceren of doorverkopen niet. Zie [LICENSE](LICENSE)
+(Nederlands, leidend), [LICENSE.en.md](LICENSE.en.md) (Engelse vertaling; bij
+verschil gaat de Nederlandse tekst voor) en [NOTICE](NOTICE). De licentietekst
+is een concept: de eerste juridische ronde is verwerkt (versie 0.2,
+27-08-2026), een tweede volgt — het blokkerende punt is de tenaamstelling van
+Licentiegever (gemarkeerd met `<<JURIST-REVIEW>>`).
+
+> **This repository is source-available, not open source.** Anyone may read
+> and study the code; only holders of a valid Agentic Team licence may use
+> it. **No text and data mining for AI training.** The rightsholder expressly
+> reserves the rights referred to in section 15o of the Dutch Copyright Act
+> and article 4(3) of Directive (EU) 2019/790: this material may not be used
+> for text and data mining for the development or training of artificial
+> intelligence models without prior written permission. Reading and indexing
+> by search engines and comparable automated tools is welcome.
+
+**Tekst- en datamining (TDM).** Indexeren en lezen door zoekmachines mag —
+daar is deze repo openbaar voor. Gebruik van de inhoud als trainingsdata voor
+AI-modellen niet: dat recht is uitdrukkelijk voorbehouden (artikel 15o
+Auteurswet, artikel 4 lid 3 Richtlijn (EU) 2019/790), zie artikel 2a van de
+LICENSE.
+
+**Bijdragen** zijn welkom onder de DCO 1.1 — onderteken je commits met
+`git commit -s`. Zie [CONTRIBUTING.md](CONTRIBUTING.md); het meeste in deze
+repo is gegenereerd, dus een issue is vaak nuttiger dan een pull request.
