@@ -1,17 +1,17 @@
 {
   "_doc": "Gegenereerd door installer/build_plugin.py in AgenticTeamAI/agent-architecture — NIET met de hand bewerken. Allowlist van de publieke plugin: elk bestand dat hier niet in staat (en niet in REPO_EIGEN van scripts/check_zero_ip.py) hoort niet in de marketplace-repo. 'buildHash' is de hash over 'bestanden' en moet gelijk zijn aan 'pluginBuildHash' in core/agents.json (validator-check 23).",
   "generator": "installer/build_plugin.py",
-  "registryVersion": "1.48.0",
+  "registryVersion": "1.49.0",
   "serverContract": {
     "check_license": [
       "ketens",
       "volgende_stap"
     ]
   },
-  "buildHash": "0b1f914fef71b655",
+  "buildHash": "dd1b4efd020b55b9",
   "bestanden": {
     ".claude-plugin/marketplace.json": "sha256:2f54503922d9cce874a5b6c4786c363cc6c8fad437a445c90e70fb073fdba36a",
-    "plugins/agentic-team/.claude-plugin/plugin.json": "sha256:0170f135c3348e2a033d91e7992e9b662c9c5dab86b05c9a24362776b7299f4f",
+    "plugins/agentic-team/.claude-plugin/plugin.json": "sha256:cebf79ffecbab85654e53c8c2bbb4c2c965061d938af4311b4763cdc6f30c33d",
     "plugins/agentic-team/.mcp.json": "sha256:cfa462de7aceead45efd779fbfe32d5a145ca14a1a0b822806f1f36b206feeea",
     "plugins/agentic-team/README.md": "sha256:28e666e8a443083c91a3b1a050f7b1c67ee8edc66cca053d8e9644b54d8c9d2d",
     "plugins/agentic-team/agents/administratie.md": "sha256:d8373240baf704832ee9a8456cb11b54985d1781717d365a9b3c26f6c1d3ea81",
