@@ -6,8 +6,9 @@ Officiële plugin-marketplace van [Agentic Team](https://www.agentic-team.ai): j
 
 1. **Voeg de marketplace toe** (claude.ai, desktop-app of Cowork): ga naar **Settings → Plugins → Add → Add marketplace → Add from a repository** en plak `AgenticTeamAI/agentic-team-marketplace`. Zorg dat **Sync automatically** aanstaat — dan blijft je team automatisch actueel.
 2. **Installeer agentic-team**: klik op *Install*. De plugin geeft je alle agents als skills, bij élk abonnement. Je licentie bepaalt welke modules (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice) actief zijn; een agent buiten je modules vertelt zelf welke module hem ontgrendelt.
-3. **Verbind je persoonlijke connector**: gebruik de knop **"Verbind met Claude"** uit de wizard of welkomstmail — die opent de connector-dialoog met jouw persoonlijke URL al ingevuld. Handmatig kan ook: Settings → Connectors → *Add custom connector*, en plak `https://www.agentic-team.ai/api/mcp/k/<jouw-sleutel>/mcp`. Behandel die URL als een wachtwoord.
-4. Klaar. Zeg bijvoorbeeld *"Start mijn dag"* (of gebruik `/chief`) en de Coördinator gaat aan de slag.
+3. **Verbind de connector**: ga in de plugin naar **Connectors** en klik op *Install* bij `agentic-team` — Claude opent de connector-dialoog met het adres al ingevuld. Handmatig kan ook: Settings → Connectors → *Add custom connector*, en plak `https://connector.agentic-team.ai/mcp`. Die URL is voor iedereen dezelfde en bevat geen geheim.
+4. **Log in**: bevestig de connector en log in op het e-mailadres waarop je bent uitgenodigd — met een inloglink, of met Google of Microsoft op datzelfde adres. Er is geen sleutel om te bewaren.
+5. Klaar. Zeg bijvoorbeeld *"Start mijn dag"* (of gebruik `/chief`) en de Coördinator gaat aan de slag.
 
 <details>
 <summary>Claude Code (voor ontwikkelaars)</summary>
@@ -17,7 +18,7 @@ Officiële plugin-marketplace van [Agentic Team](https://www.agentic-team.ai): j
 /plugin install agentic-team@agentic-team
 ```
 
-Installeer met `--config license_key=<jouw sleutel>` — dan is de connector meteen mee geconfigureerd. Zet auto-update aan via `/plugin` → *Marketplaces* → *Enable auto-update*.
+De plugin brengt de connector zelf mee; bij het eerste gebruik opent Claude de inlogflow op je e-mailadres. Zet auto-update aan via `/plugin` → *Marketplaces* → *Enable auto-update*.
 
 </details>
 

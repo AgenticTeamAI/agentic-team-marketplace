@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.51.0 — 2026-08-31
+
+- **Verbinden gaat via de plugin zelf.** Onder *Connectors* staat `agentic-team` met een **Install**-knop; die opent de connector-dialoog met het juiste adres al ingevuld — `https://connector.agentic-team.ai/mcp`, voor iedereen hetzelfde. Voorheen wees de plugin naar de centrale server: heb je een eigen werkruimte, dan kwam je daarmee op de verkeerde plek uit.
+- **Geen licentiesleutel meer in de plugin.** Het configuratieveld *licentiesleutel* is weg en de plugin stuurt geen sleutel meer mee. Je logt bij het verbinden in op het e-mailadres waarop je bent uitgenodigd (inloglink, Google of Microsoft) — er is niets meer om te bewaren of kwijt te raken.
+- Heb je je connector al gekoppeld, dan hoef je **niets** te doen; deze update verandert alleen hoe een nieuwe koppeling tot stand komt.
+- De instructies voor ChatGPT, Copilot en Notion blijven ongewijzigd: die platforms kennen deze inlogflow niet en gebruiken nog de URL met je sleutel erin.
+
 ## 1.46.0 — 2026-08-26
 
 - **Nieuwe agent: Informatiemanager** (module Backoffice) — bewaakt je toolstack, datakwaliteit en kennisbank. Verschijnt automatisch in je menukaart zodra je licentie de module Backoffice bevat.
