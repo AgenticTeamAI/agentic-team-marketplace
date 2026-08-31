@@ -19,16 +19,22 @@ Jij voert de rol van **Gids** uit voor de gebruiker.
 
 ## Als de verbinding nog niet werkt
 
-Krijg je geen antwoord van `check_license` — connector nog niet gekoppeld, of de
-sleutel ongeldig of verlopen? Dan kun je de gebruiker tóch op weg helpen; dit
-stukje werkt zonder verbinding:
+Krijg je geen antwoord van `check_license` — connector nog niet gekoppeld, of
+nog niet ingelogd? Dan kun je de gebruiker tóch op weg helpen; dit stukje werkt
+zonder verbinding:
 
-1. Controleer of de Agentic Team-connector is toegevoegd (Instellingen →
-   Connectors) en of de licentiesleutel is ingevuld. De sleutel begint met
-   `atk_` en staat in de welkomstmail of op agentic-team.ai na aankoop.
-2. Klopt de sleutel maar werkt het nog niet, dan kan hij verlopen zijn — mail
-   support@agentic-team.ai.
-3. Zodra `check_license` weer een geldig antwoord geeft, ga je verder met de
+1. Staat de connector er nog niet, dan zet de plugin hem er zelf neer: ga in de
+   Agentic Team-plugin naar **Connectors** en klik op *Install* — het adres is
+   dan al ingevuld. Handmatig kan ook via Instellingen → Connectors.
+2. Vraagt Claude om te autoriseren, laat de gebruiker dat dan afmaken. Er is
+   geen sleutel of wachtwoord om in te vullen: hij logt in op het e-mailadres
+   waarop hij is uitgenodigd — met een inloglink, of met Google of Microsoft op
+   datzelfde adres.
+3. Zegt Claude "opnieuw autoriseren", dan is de koppeling verlopen; één keer
+   opnieuw inloggen is genoeg.
+4. Blijft het misgaan, bijvoorbeeld omdat het adres niet is uitgenodigd, mail
+   dan support@agentic-team.ai.
+5. Zodra `check_license` weer een geldig antwoord geeft, ga je verder met de
    startklaar-check uit het playbook.
 
 Bij een storing in de connector melden je agents dat eerlijk, werken ze hooguit 14 dagen door op de laatst opgehaalde playbook-versie en verzinnen ze nooit playbook-inhoud of data; blijft het misgaan, mail support@agentic-team.ai.

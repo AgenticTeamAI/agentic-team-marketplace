@@ -1,19 +1,19 @@
 {
   "_doc": "Gegenereerd door installer/build_plugin.py in AgenticTeamAI/agent-architecture — NIET met de hand bewerken. Allowlist van de publieke plugin: elk bestand dat hier niet in staat (en niet in REPO_EIGEN van scripts/check_zero_ip.py) hoort niet in de marketplace-repo. 'buildHash' is de hash over 'bestanden' en moet gelijk zijn aan 'pluginBuildHash' in core/agents.json (validator-check 23).",
   "generator": "installer/build_plugin.py",
-  "registryVersion": "1.50.0",
+  "registryVersion": "1.51.0",
   "serverContract": {
     "check_license": [
       "ketens",
       "volgende_stap"
     ]
   },
-  "buildHash": "42e0cba13b8aed3c",
+  "buildHash": "065cdb6b45c43ca6",
   "bestanden": {
     ".claude-plugin/marketplace.json": "sha256:2f54503922d9cce874a5b6c4786c363cc6c8fad437a445c90e70fb073fdba36a",
-    "plugins/agentic-team/.claude-plugin/plugin.json": "sha256:ff1766a03e9533c6f03d2c378bcb595617448e0a14efe14d1db69cddd46cf37e",
-    "plugins/agentic-team/.mcp.json": "sha256:cfa462de7aceead45efd779fbfe32d5a145ca14a1a0b822806f1f36b206feeea",
-    "plugins/agentic-team/README.md": "sha256:28e666e8a443083c91a3b1a050f7b1c67ee8edc66cca053d8e9644b54d8c9d2d",
+    "plugins/agentic-team/.claude-plugin/plugin.json": "sha256:88f73bceea7b4a7698bcec4e6171bb9233e7f65bd6d6127d9701064ea3cca6d8",
+    "plugins/agentic-team/.mcp.json": "sha256:4a9419e3768e75ab2af4cf086f8e7ee624ce6d076c12844a05bbaf9ad9725c78",
+    "plugins/agentic-team/README.md": "sha256:3fc2dffc7b09c40ce36da69425a0f7de118d01ed02d3b1aed9b33b25d307d2dd",
     "plugins/agentic-team/agents/administratie.md": "sha256:d8373240baf704832ee9a8456cb11b54985d1781717d365a9b3c26f6c1d3ea81",
     "plugins/agentic-team/agents/ceo-agent.md": "sha256:77d2857c2a597bf228b9b65d54d4bf20b886c98ab2abaadebe77521c5467185b",
     "plugins/agentic-team/agents/content-strateeg.md": "sha256:62f074e3bac53cbc1f473041d72da7ec3a2c3f16465ccc592d3331b77ef57f4e",
@@ -52,7 +52,7 @@
     "plugins/agentic-team/skills/de-stem/SKILL.md": "sha256:60fce11b6d0293e25adefb2efcf1f1bbbe35f0e35f47099dbe4620f76e35776f",
     "plugins/agentic-team/skills/dealmaker/SKILL.md": "sha256:2bc3ffa215afccc344f93c84a86dd2b597ec94f35a3da9bf59a5e1940c7eced4",
     "plugins/agentic-team/skills/delivery-architect/SKILL.md": "sha256:5fcc190d5d71b4c136a292c9265d99876a6a4daf576d3ce296e5db521b303333",
-    "plugins/agentic-team/skills/gids/SKILL.md": "sha256:b4af8821fde278f498f24cd3ad9a8efb551e0212918d91e01b80303ac96923c1",
+    "plugins/agentic-team/skills/gids/SKILL.md": "sha256:2afa52acf9741f6e355e5ede9dd8c767292ffa6a73cc8812ea33794597ad21c3",
     "plugins/agentic-team/skills/informatiemanager/SKILL.md": "sha256:f3259215a98fb24a8d0ed8fb0b75c126aa56891990a20b2180d07fc4a61a5c80",
     "plugins/agentic-team/skills/jurist/SKILL.md": "sha256:2e84e9be0cf2c0c6e2184a880c2055721c96892cd563c4dffe69ad6e2f6648af",
     "plugins/agentic-team/skills/ketens/SKILL.md": "sha256:78f7c6b48b69174afb73a173c209139fe5295236ba09896e531108f64bf510c5",

@@ -1,6 +1,6 @@
 {
   "name": "agentic-team",
-  "version": "1.50.0",
+  "version": "1.51.0",
   "description": "Het Agentic Team: 21 AI-agents in zeven teams (Core, Groei, Zichtbaarheid, Sales, Delivery, Strategie, Backoffice). Installeer deze plugin bij elk abonnement — je licentie bepaalt welke modules actief zijn.",
   "author": {
     "name": "Agentic Team",
@@ -8,13 +8,5 @@
   },
   "homepage": "https://www.agentic-team.ai",
   "repository": "https://github.com/AgenticTeamAI/agentic-team-marketplace",
-  "license": "Proprietary",
-  "userConfig": {
-    "license_key": {
-      "type": "string",
-      "title": "Agentic Team licentiesleutel",
-      "description": "Je persoonlijke sleutel (atk_...) uit de welkomstmail of wizard",
-      "sensitive": true
-    }
-  }
+  "license": "Proprietary"
 }
