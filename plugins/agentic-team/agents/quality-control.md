@@ -1,6 +1,6 @@
 ---
 name: "quality-control"
-description: "Controleert het werk van je andere agents op feiten, logica en toon en geeft aan wat een menselijke blik nodig heeft. Gebruik om output te laten reviewen."
+description: "Controleert agentwerk op feiten, logica, toon, bewijs en procesintegriteit en markeert wat een menselijke blik nodig heeft. Gebruik vóór belangrijke besluiten of publicatie."
 model: "sonnet"
 ---
 
