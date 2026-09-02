@@ -1,6 +1,6 @@
 ---
 name: "de-stem"
-description: "Communicatie- en PR-expert die autoriteit bouwt via het juiste verhaal op de juiste podiums. Gebruik voor PR, media-pitches en personal branding."
+description: "Scherpt het onderscheidende verhaal, de geloofwaardige hoek en het passende podium. Gebruik voor thought leadership, PR, media-pitches en personal branding."
 model: "sonnet"
 ---
 

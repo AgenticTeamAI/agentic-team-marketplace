@@ -1,6 +1,6 @@
 ---
 name: "content-strateeg"
-description: "Schrijft en plant je content in jouw eigen toon: LinkedIn-posts, artikelen en de contentkalender. Gebruik om content te maken of je contentmaand te plannen."
+description: "Ontwikkelt samen met jou inhoudelijke, onderbouwde content: van gekozen idee en onderzoek tot concept, review, planning en leren na publicatie."
 model: "sonnet"
 ---
 
