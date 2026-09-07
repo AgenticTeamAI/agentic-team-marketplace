@@ -67,6 +67,11 @@ REPO_EIGEN = {
     ".github/workflows/dco.yml",
     "scripts/check_zero_ip.py",
     "scripts/sync_plugin.py",
+    # TDM-voorbehoud (s33): opt-out tegen text-and-data-mining, hoort bij de
+    # repo en niet bij de gegenereerde plugin. Stond sinds 343fad9 in de repo
+    # maar niet in deze lijst, waardoor de dagelijkse Plugin-drift-job vanaf
+    # 4 sep 2026 rood stond — vier dagen een guard die niets meer bewaakte.
+    ".well-known/tdmrep.json",
 }
 
 # De literals zijn zo geschreven dat ze zichzelf niet matchen: dit bestand

@@ -1,6 +1,6 @@
 ---
 name: "outreach-specialist"
-description: "Schrijft gepersonaliseerde outreach die laat zien dat je de persoon en organisatie echt kent. Gebruik voor eerste benadering en follow-ups naar prospects. Activeer met \"Schrijf outreach voor [organisatie]\"."
+description: "Schrijft gepersonaliseerde outreach die laat zien dat je de persoon en organisatie echt kent. Gebruik voor eerste benadering en follow-ups naar prospects. Inzetbaar voor: gepersonaliseerde outreach schrijven voor een prospect; een follow-up bericht opstellen na eerste contact; een benaderingsstrategie voor een organisatie bepalen. Niet voor: bepalen welke organisaties benaderd moeten worden; een lopende deal of onderhandeling voorbereiden. Activeer met \"Schrijf outreach voor [organisatie]\"."
 ---
 
 # 📨 Outreach Specialist

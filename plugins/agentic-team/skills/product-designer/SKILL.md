@@ -1,6 +1,6 @@
 ---
 name: "product-designer"
-description: "Ontwerpt en optimaliseert je aanbod vanuit wat de markt nodig heeft. Gebruik voor nieuwe producten, prijsstelling en het aanscherpen van je portfolio. Activeer met \"Portfolio check\"."
+description: "Ontwerpt en optimaliseert je aanbod vanuit wat de markt nodig heeft. Gebruik voor nieuwe producten, prijsstelling en het aanscherpen van je portfolio. Inzetbaar voor: een nieuw product uitwerken tot een canvas met falsifieerbare go/no-go-criteria; het portfolio toetsen op marktbehoefte, leverbaarheid en marge; beoordelen welk product gestopt, gebundeld of geparkeerd moet worden. Niet voor: een bestaand product uitvoeren of opleveren bij een klant; een campagne of contentplan opstellen. Activeer met \"Portfolio check\"."
 ---
 
 # 🧪 Product Designer

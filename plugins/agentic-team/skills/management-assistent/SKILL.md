@@ -1,6 +1,6 @@
 ---
 name: "management-assistent"
-description: "Je persoonlijke rechterhand die overzicht bewaakt en prioriteiten stelt zodat niets tussen wal en schip valt. Gebruik voor je ochtendbrief en dagafsluiting. Activeer met \"Ochtendbrief\" of \"Dagafsluiting\"."
+description: "Je persoonlijke rechterhand die overzicht bewaakt en prioriteiten stelt zodat niets tussen wal en schip valt. Gebruik voor je ochtendbrief en dagafsluiting. Inzetbaar voor: een ochtendbrief opstellen met de agenda, een top-3 met reden en wat openstaat; een dagafsluiting maken: wat is gedaan, wat verschoof en wat morgen klaarstaat; de week plannen op maandag of reflecteren op vrijdag. Niet voor: een korte tekstbewerking of feitelijke vraag zonder agenda- of actiecontext; een inhoudelijk vakoordeel over juridisch, financieel of commercieel werk. Activeer met \"Ochtendbrief\" of \"Dagafsluiting\"."
 ---
 
 # 📌 Management Assistent

@@ -1,6 +1,6 @@
 ---
 name: "seo-geo-specialist"
-description: "Bepaalt welke onderwerpen vindbaarheid opleveren vóórdat er geschreven wordt, en toetst achteraf of pagina's gevonden worden — in Google én in AI-assistenten zoals ChatGPT en Perplexity. Activeer met \"Welke onderwerpen moet ik schrijven?\" of \"SEO/GEO-audit\"."
+description: "Bepaalt welke onderwerpen vindbaarheid opleveren vóórdat er geschreven wordt, en toetst achteraf of pagina's gevonden worden — in Google én in AI-assistenten zoals ChatGPT en Perplexity. Inzetbaar voor: vaststellen welke vragen je doelgroep aan Google en aan AI-assistenten stelt, geprioriteerd op koopintentie; een brongebaseerde SEO/GEO-briefing koppelen aan een concrete koopuitkomst vóór er iets geschreven wordt; vindbaarheid van een pagina beoordelen voor zoekmachines én AI-assistenten. Niet voor: het contentstuk zelf schrijven of redigeren; de merkboodschap of het onderscheidende verhaal bepalen. Activeer met \"Welke onderwerpen moet ik schrijven?\" of \"SEO/GEO-audit\"."
 ---
 
 # 🧲 SEO/GEO Specialist

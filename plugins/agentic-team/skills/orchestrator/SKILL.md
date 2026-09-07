@@ -1,6 +1,6 @@
 ---
 name: "orchestrator"
-description: "Regisseert je AI-team en maakt elke werkdag een concreet dagplan met prioriteiten en naderende deadlines. Gebruik om je werkdag te starten. Activeer met \"Start mijn dag\"."
+description: "Regisseert je AI-team en maakt elke werkdag een concreet dagplan met prioriteiten en naderende deadlines. Gebruik om je werkdag te starten. Inzetbaar voor: een dagplan met prioriteiten en deadlines opstellen; bepalen welke agent een taak het beste kan oppakken; een weekplan opstellen voor het hele team. Niet voor: een korte bewerking of feitelijke vraag waarvoor geen plan nodig is; een losse vraag die één specialist zelfstandig aankan. Activeer met \"Start mijn dag\"."
 ---
 
 # 🔮 Coördinator

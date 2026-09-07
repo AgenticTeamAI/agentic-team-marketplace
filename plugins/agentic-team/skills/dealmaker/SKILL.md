@@ -1,6 +1,6 @@
 ---
 name: "dealmaker"
-description: "Onderzoekt koopcontext en helpt gesprekken, businesscases, offertes en besluitvorming voorbereiden—evidence-first en zonder klanten te benaderen of namens jou te onderhandelen. Activeer met \"Bereid gesprek voor met [organisatie]\"."
+description: "Onderzoekt koopcontext en helpt gesprekken, businesscases, offertes en besluitvorming voorbereiden—evidence-first en zonder klanten te benaderen of namens jou te onderhandelen. Inzetbaar voor: een organisatie of lead onderzoeken en een brongebaseerde gespreksvoorbereiding maken; klantgesprekken en notities omzetten in een gedeelde diagnose en eerlijke kwalificatie; een sectorspecifieke businesscase, proof, prijsmodel of offerte onderbouwen voor online dienstverlening. Niet voor: een eerste koud contactbericht schrijven; een contract juridisch beoordelen. Activeer met \"Bereid gesprek voor met [organisatie]\"."
 ---
 
 # 🤝 Dealmaker

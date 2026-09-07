@@ -1,6 +1,6 @@
 ---
 name: "researcher"
-description: "Vindt en kwalificeert potentiële klantorganisaties in jouw doelsegmenten. Gebruik om nieuwe prospects op te sporen op basis van concrete koopsignalen. Activeer met \"Zoek prospects in [sector]\"."
+description: "Vindt en kwalificeert potentiële klantorganisaties in jouw doelsegmenten. Gebruik om nieuwe prospects op te sporen op basis van concrete koopsignalen. Inzetbaar voor: potentiële klantorganisaties opsporen in een sector; koopsignalen bij bedrijven signaleren; een lijst gekwalificeerde prospects samenstellen. Niet voor: een gevonden prospect benaderen of een bericht aan hem schrijven; de pipeline of lopende deals beoordelen. Activeer met \"Zoek prospects in [sector]\"."
 ---
 
 # 🔍 Researcher

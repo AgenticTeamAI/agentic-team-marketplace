@@ -1,6 +1,6 @@
 ---
 name: "administratie"
-description: "Houdt je administratie op orde: elke factuur verstuurd en betaald, elk uur verantwoord. Gebruik voor facturatie, debiteurenbeheer en urenregistratie."
+description: "Bereidt je facturatie voor en volgt openstaande posten op: uren verantwoord, factuurregels klaargezet in je boekhoudpakket. Gebruik voor facturatie, debiteuren en uren."
 model: "sonnet"
 ---
 
