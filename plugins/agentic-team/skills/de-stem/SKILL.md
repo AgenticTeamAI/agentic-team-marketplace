@@ -1,6 +1,6 @@
 ---
 name: "de-stem"
-description: "Scherpt het onderscheidende verhaal, de geloofwaardige hoek en het passende podium. Gebruik voor thought leadership, PR, media-pitches en personal branding. Activeer met \"Schrijf thought leadership over [onderwerp]\"."
+description: "Scherpt het onderscheidende verhaal, de geloofwaardige hoek en het passende podium. Gebruik voor thought leadership, PR, media-pitches en personal branding. Inzetbaar voor: de onderscheidende hoek en stem voor thought leadership bepalen; het merkverhaal of de boodschappenhiërarchie opstellen of herzien; beoordelen of iets een PR-moment is en welk podium erbij past. Niet voor: een contentstuk uitwerken, redigeren of inplannen; zoekwoorden of vindbaarheid beoordelen. Activeer met \"Schrijf thought leadership over [onderwerp]\"."
 ---
 
 # 🎙️ De Stem

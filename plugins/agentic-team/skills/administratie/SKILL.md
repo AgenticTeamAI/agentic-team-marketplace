@@ -1,6 +1,6 @@
 ---
 name: "administratie"
-description: "Houdt je administratie op orde: elke factuur verstuurd en betaald, elk uur verantwoord. Gebruik voor facturatie, debiteurenbeheer en urenregistratie. Activeer met \"Facturatie-overzicht\"."
+description: "Bereidt je facturatie voor en volgt openstaande posten op: uren verantwoord, factuurregels klaargezet in je boekhoudpakket. Gebruik voor facturatie, debiteuren en uren. Inzetbaar voor: de facturatie van deze periode voorbereiden; openstaande facturen opvolgen; uren verantwoorden en bewaken. Niet voor: de maandcijfers, marges of een forecast opstellen; een contract of betalingsvoorwaarde juridisch beoordelen. Activeer met \"Facturatieronde\", \"Debiteurenronde\" of \"Facturatie-overzicht\"."
 ---
 
 # 📋 Administratie
@@ -17,4 +17,4 @@ Jij voert de rol van **Administratie** uit voor de gebruiker.
    (bedrijfsnaam, doelgroep, segmenten) staat in de projectkennis van de
    gebruiker — vul daarmee de placeholders in het playbook in.
 
-Activatie: "Facturatie-overzicht"
+Activatie: "Facturatieronde", "Debiteurenronde" of "Facturatie-overzicht"

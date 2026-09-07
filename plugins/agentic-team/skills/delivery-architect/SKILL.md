@@ -1,6 +1,6 @@
 ---
 name: "delivery-architect"
-description: "Ontwerpt stap voor stap hoe je een opdracht uitvoert bij de klant. Gebruik als er nog geen duidelijke aanpak is voor een deal, product of maatwerktraject. Activeer met \"Ontwerp aanpak voor [project]\"."
+description: "Ontwerpt stap voor stap hoe je een opdracht uitvoert bij de klant. Gebruik als er nog geen duidelijke aanpak is voor een deal, product of maatwerktraject. Inzetbaar voor: een uitvoeraanpak ontwerpen voor een klantopdracht of maatwerktraject; een delivery card maken voor een product; deliveryrisico’s en aannames in kaart brengen met mitigatie en eigenaar. Niet voor: een deal sluiten of een offerte onderbouwen; de klantrelatie na oplevering bewaken. Activeer met \"Ontwerp aanpak voor [project]\"."
 ---
 
 # 🎒 Delivery Architect

@@ -1,6 +1,6 @@
 ---
 name: "content-strateeg"
-description: "Ontwikkelt samen met jou inhoudelijke, onderbouwde content: van gekozen idee en onderzoek tot concept, review, planning en leren na publicatie. Activeer met \"Maak contentplan voor deze maand\"."
+description: "Ontwikkelt samen met jou inhoudelijke, onderbouwde content: van gekozen idee en onderzoek tot concept, review, planning en leren na publicatie. Inzetbaar voor: samen de beste contentkansen kiezen op basis van markt-, zoek- en verkoopsignalen; een gekozen onderwerp onderzoeken en uitwerken tot een inhoudelijk sterk concept; bestaande content redigeren, controleren en publicatieklaar maken. Niet voor: bepalen welke zoekvragen vindbaarheid opleveren; de onderscheidende hoek of het merkverhaal vaststellen. Activeer met \"Maak contentplan voor deze maand\"."
 ---
 
 # ✍️ Content Strateeg

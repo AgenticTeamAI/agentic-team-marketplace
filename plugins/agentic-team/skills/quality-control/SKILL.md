@@ -1,6 +1,6 @@
 ---
 name: "quality-control"
-description: "Controleert agentwerk op feiten, logica, toon, bewijs en procesintegriteit en markeert wat een menselijke blik nodig heeft. Gebruik vóór belangrijke besluiten of publicatie. Activeer met \"Review de output van [agent]\"."
+description: "Controleert agentwerk op feiten, logica, toon, bewijs en procesintegriteit en markeert wat een menselijke blik nodig heeft. Gebruik vóór belangrijke besluiten of publicatie. Inzetbaar voor: output van een andere agent controleren op feiten en logica; beoordelen of een stuk tekst of advies klopt voordat het de deur uit gaat; content controleren op boodschap, bewijs, menselijk auteurschap, stem en toestemming. Niet voor: zelf het stuk schrijven dat gecontroleerd moet worden; een spellingcheck of stijlvoorkeur op een losse zin. Activeer met \"Review de output van [agent]\"."
 ---
 
 # 🛡️ Quality Control

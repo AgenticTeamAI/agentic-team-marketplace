@@ -1,6 +1,6 @@
 ---
 name: "marktmaker"
-description: "Strategische marketingdenker die bepaalt waar en voor wie je zichtbaar bent en hoe je structureel leads wint. Gebruik voor positionering en campagnestrategie. Activeer met \"Positionering\" of \"Campagneplan\"."
+description: "Strategische marketingdenker die bepaalt waar en voor wie je zichtbaar bent en hoe je structureel leads wint. Gebruik voor positionering en campagnestrategie. Inzetbaar voor: bepalen waar en voor wie je zichtbaar moet zijn; een toetsbaar campagneplan opstellen om structureel leads te winnen; de positionering van het bedrijf aanscherpen. Niet voor: een concreet contentstuk schrijven of redigeren; een individuele prospect benaderen of kwalificeren. Activeer met \"Positionering\" of \"Campagneplan\"."
 ---
 
 # 🎯 Marktmaker

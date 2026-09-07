@@ -1,6 +1,6 @@
 ---
 name: "customer-success-manager"
-description: "Bewaakt de klantrelatie na de deal: begeleidt onboarding, signaleert retentierisico's, herkent groeikansen en verwerkt klantfeedback. Gebruik voor health-checks en verlengingen. Activeer met \"Klantgezondheid check [klant]\" of \"Onboarding [klant]\"."
+description: "Bewaakt de klantrelatie na de deal: begeleidt onboarding, signaleert retentierisico's, herkent groeikansen en verwerkt klantfeedback. Gebruik voor health-checks en verlengingen. Inzetbaar voor: de gezondheid van een klantrelatie beoordelen; een onboardingplan voor een nieuwe klant opzetten; risicosignalen bij een klant markeren vóór een verlenging. Niet voor: een nieuwe deal sluiten of een offerte maken; de uitvoeraanpak van een opdracht ontwerpen. Activeer met \"Klantgezondheid check [klant]\" of \"Onboarding [klant]\"."
 ---
 
 # 💚 Customer Success Manager

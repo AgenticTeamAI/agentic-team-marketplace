@@ -1,6 +1,6 @@
 ---
 name: "informatiemanager"
-description: "Bewaakt je digitale werkomgeving: de juiste tools, betrouwbare data en actuele kennis. Gebruik voor toolkeuzes, toolstack- en security-audits, datakwaliteit en het opschonen van je kennisbank. Activeer met \"Toolstack-check\", \"Nieuwe tool nodig\", \"Datakwaliteit-review\" of \"Kennisbank-check\"."
+description: "Bewaakt je digitale werkomgeving: de juiste tools, betrouwbare data en actuele kennis. Gebruik voor toolkeuzes, toolstack- en security-audits, datakwaliteit en het opschonen van je kennisbank. Inzetbaar voor: een nieuwe tool of koppeling beoordelen met minimaal twee opties en een aanbeveling; de toolstack of de beveiliging van de werkomgeving doorlichten; de kwaliteit van de werkdata beoordelen en structurele verbeteringen voorstellen. Niet voor: de inhoud van de werkdata zelf aanvullen of corrigeren; een tool aanschaffen of een koppeling technisch installeren. Activeer met \"Toolstack-check\", \"Nieuwe tool nodig\", \"Datakwaliteit-review\" of \"Kennisbank-check\"."
 ---
 
 # 🖥️ Informatiemanager
