@@ -54,6 +54,49 @@ def uitpakken(tar_path, doel):
             tar.extractall(doel)
 
 
+def _patronen_uit(pad: Path, naam: str) -> set:
+    """De regex-patronen uit een PATTERNS/MENUKAART_PATRONEN-lijst, als tekst."""
+    import re as _re
+    tekst = pad.read_text(encoding="utf-8")
+    i = tekst.index(naam)
+    blok = tekst[i:tekst.index("\n]", i)]
+    uit = set()
+    for m in _re.finditer(r'r?"((?:[^"\\]|\\.)*)"', blok):
+        w = m.group(1)
+        if any(c in w for c in "\\[](){}|+*^$") or w.startswith("<!--"):
+            uit.add(w)
+    return uit
+
+
+def controleer_zero_ip_dekking(arch_uitpak: Path) -> None:
+    """De offline checker mag niet ZWAKKER zijn dan de generator.
+
+    De twee patroonlijsten staan bewust apart: check_zero_ip.py draait offline,
+    zonder arch, juist zodat een fout in de generator niet óók de controle
+    verblindt. Die onafhankelijkheid is het punt en blijft.
+
+    Wat er níet in zat, is een controle op de richting waarin het misgaat. De
+    lijsten kunnen uiteenlopen, en de gevaarlijke kant is dat de CHECKER een
+    patroon mist dat de generator wel kent: dan glipt precies dat soort IP
+    langs de laatste poort naar een publieke repo. Andersom is ongevaarlijk —
+    een checker die méér weet is strenger, en dat mag.
+
+    Dit draait alleen tijdens de sync, want alleen dan is arch er.
+    """
+    generator = _patronen_uit(arch_uitpak / "installer" / "build_plugin.py", "MENUKAART_PATRONEN")
+    checker = _patronen_uit(ROOT / "scripts" / "check_zero_ip.py", "PATTERNS")
+    ontbreekt = sorted(generator - checker)
+    if ontbreekt:
+        raise SystemExit(
+            "sync_plugin: check_zero_ip.py mist patronen die build_plugin.py wél kent:\n  "
+            + "\n  ".join(ontbreekt)
+            + "\n\nDe offline checker is daarmee zwakker dan de generator, en precies dat "
+              "soort IP glipt dan langs de laatste poort. Neem ze over in PATTERNS — "
+              "met een eigen formulering, want de twee lijsten horen onafhankelijk te blijven."
+        )
+
+
+
 def main():
     ap = argparse.ArgumentParser(description="Bouw de plugin op een gepinde arch-main-commit en schrijf de lock")
     ap.add_argument("--arch", default=os.environ.get("ARCH_PATH", str(ROOT.parent / "agent-architecture")))
@@ -86,6 +129,8 @@ def main():
         uitpakken(tar_path, tmp / "arch")
         registry = json.loads((tmp / "arch" / "core" / "agents.json").read_text(encoding="utf-8"))
         versie = registry["registryVersion"]
+
+        controleer_zero_ip_dekking(tmp / "arch")
 
         out = tmp / "out"
         subprocess.run([sys.executable, str(tmp / "arch" / "installer" / "build_plugin.py"), "--output", str(out)], check=True)
