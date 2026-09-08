@@ -65,6 +65,10 @@ REPO_EIGEN = {
     ".github/workflows/zero-ip.yml",
     ".github/workflows/plugin-drift.yml",
     ".github/workflows/dco.yml",
+    # ob63: de sync-workflow die de arch-pin bijhoudt. Hoort bij de repo, niet
+    # bij de gegenereerde plugin — en staat hier meteen, want de rij hieronder
+    # laat zien wat er gebeurt als dat vergeten wordt.
+    ".github/workflows/sync.yml",
     "scripts/check_zero_ip.py",
     "scripts/sync_plugin.py",
     # TDM-voorbehoud (s33): opt-out tegen text-and-data-mining, hoort bij de
