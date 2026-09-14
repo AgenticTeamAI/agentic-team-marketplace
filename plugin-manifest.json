@@ -1,17 +1,17 @@
 {
   "_doc": "Gegenereerd door installer/build_plugin.py in AgenticTeamAI/agent-architecture — NIET met de hand bewerken. Allowlist van de publieke plugin: elk bestand dat hier niet in staat (en niet in REPO_EIGEN van scripts/check_zero_ip.py) hoort niet in de marketplace-repo. 'buildHash' is de hash over 'bestanden' en moet gelijk zijn aan 'pluginBuildHash' in core/agents.json (validator-check 23).",
   "generator": "installer/build_plugin.py",
-  "registryVersion": "1.91.0",
+  "registryVersion": "1.91.1",
   "serverContract": {
     "check_license": [
       "ketens",
       "volgende_stap"
     ]
   },
-  "buildHash": "c5ec4b07c03536c8",
+  "buildHash": "3dc2bfdc16f2c9ac",
   "bestanden": {
     ".claude-plugin/marketplace.json": "sha256:2f54503922d9cce874a5b6c4786c363cc6c8fad437a445c90e70fb073fdba36a",
-    "plugins/agentic-team/.claude-plugin/plugin.json": "sha256:473924ac40fe9bd23847aa5bbf2e27c094c795e276033165c6b6fd0144ef6e6e",
+    "plugins/agentic-team/.claude-plugin/plugin.json": "sha256:86d42d0cd03f562c7248106505596e07cf350532d0b09481a63d3c922812b741",
     "plugins/agentic-team/.mcp.json": "sha256:4a9419e3768e75ab2af4cf086f8e7ee624ce6d076c12844a05bbaf9ad9725c78",
     "plugins/agentic-team/README.md": "sha256:3fc2dffc7b09c40ce36da69425a0f7de118d01ed02d3b1aed9b33b25d307d2dd",
     "plugins/agentic-team/agents/administratie.md": "sha256:79f2b6f9a04025e0976e0ac5ec56139aeb36714f2e9da2e31ffd696644303d16",
@@ -42,7 +42,7 @@
     "plugins/agentic-team/copilot-agent/AGENT-INSTRUCTIE.md": "sha256:e24e93b58ec1703d52a7238bd6974ce4aa5ec4b3874d7e94c672ce4c04e568bc",
     "plugins/agentic-team/copilot-agent/SETUP.md": "sha256:88e5c95e571c6061724cee94bda3ab138696dd80d20173f69d6543a5e1fb4ac1",
     "plugins/agentic-team/mistral-agent/AGENT-INSTRUCTIE.md": "sha256:b9d0763bcb1affce49236cae955e77318eba1e13a7d0f6ee3b45aed557838bea",
-    "plugins/agentic-team/mistral-agent/SETUP.md": "sha256:5c05fef3caad02038371797202aca3d99804582347196f5dad03988a229f08b0",
+    "plugins/agentic-team/mistral-agent/SETUP.md": "sha256:71dbc871ff73e5dd6cbfa5081ad40f76c43da8ccdac7b66b3f494477f43465ad",
     "plugins/agentic-team/notion-agent/AGENT-INSTRUCTIE.md": "sha256:4fb8d736bf016428183e90e8c4dc74f3a0b232ee84fbbf0eeb727d32fbfd91c0",
     "plugins/agentic-team/notion-agent/SETUP.md": "sha256:8dee76e1928190fa0168514b0e694d10ed8593d1e11230cd1725afb198aa26e2",
     "plugins/agentic-team/skills/administratie/SKILL.md": "sha256:204edf2287651d1edf88f5bd5cd372e8354b6ce0ace6d9d0760971668bc6ef7a",
