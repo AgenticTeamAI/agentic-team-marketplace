@@ -12,9 +12,9 @@ beheerder custom connectors eerst moeten toestaan.
    (vervang het placeholder-segment door je licentiesleutel; de URL is
    daarmee geheim — deel hem niet).
 2. **Kies géén OAuth**: laat de authenticatie leeg (je sleutel zit al in de
-   URL). De OAuth-optie van Mistral vereist dynamische clientregistratie en
-   strandt bij onze server bewust vóór het inlogscherm — dat is geen
-   storing, dus niet blijven proberen.
+   URL). Het connectorformulier van Mistral Studio accepteert de OAuth-route
+   naar onze server nog niet. Dat ligt aan Mistral, niet aan jouw instellingen,
+   dus niet blijven proberen: de sleutel-URL werkt wél.
 3. **Per gesprek activeren**: zet in Vibe de Agentic Team-connector aan in
    het gesprek (tools-/connectormenu bij het invoerveld) en plak de inhoud
    van `AGENT-INSTRUCTIE.md` als eerste bericht.
