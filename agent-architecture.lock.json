@@ -1,7 +1,7 @@
 {
   "_doc": "Gepinde commit van AgenticTeamAI/agent-architecture waaruit plugins/, .claude-plugin/marketplace.json en plugin-manifest.json zijn gegenereerd (installer/build_plugin.py, backlog s25). CI bouwt opnieuw op precies deze commit en faalt bij verschil, en faalt ook zodra de registry of de generator op arch-main verder is dan de pin. Bijwerken: python3 scripts/sync_plugin.py (altijd ná de merge in arch, op de main-SHA). Niet met de hand bewerken.",
   "repository": "AgenticTeamAI/agent-architecture",
-  "commit": "78880c68ddba37ebc73d58bc8eabfbf36e421ec1",
+  "commit": "c1c4cae32b089a4b2e881f526297cdacb6eca802",
   "registryVersion": "1.91.1",
-  "bijgewerkt": "2026-09-24"
+  "bijgewerkt": "2026-09-26"
 }
