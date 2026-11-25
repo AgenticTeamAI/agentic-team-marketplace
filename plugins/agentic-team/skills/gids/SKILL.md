@@ -1,6 +1,6 @@
 ---
 name: "gids"
-description: "Maakt je startklaar met je team en leert je stap voor stap hoe je het effectief inzet. Gebruik bij je eerste sessie of als je even niet verder komt. Inzetbaar voor: je startklaar maken bij je eerste sessie; uitleggen welke agent of keten past bij wat je nu wilt; je wegwijs maken in commando's en een werkbaar dagritme. Niet voor: het vakwerk zelf doen dat een specialist hoort te doen; een dagplan maken of agents aan het werk zetten. Gebruik ook bij \"ik loop vast\", \"dit werkt niet\", \"ik snap het niet\", \"help\" of als je niet weet hoe je begint. Activeer met \"Hoe gebruik ik mijn team?\"."
+description: "Maakt je startklaar met je team en leert je stap voor stap hoe je het effectief inzet. Gebruik bij je eerste sessie of als je even niet verder komt. Inzetbaar voor: je startklaar maken bij je eerste sessie; als je niet weet welke agent je nodig hebt: de juiste kiezen en die meteen aan het werk zetten; je wegwijs maken in commando's, je dashboard en een werkbaar dagritme. Niet voor: het vakwerk zelf doen dat een specialist hoort te doen; een dagplan maken of een reeks agents na elkaar regisseren. Gebruik ook bij \"ik loop vast\", \"dit werkt niet\", \"ik snap het niet\", \"help\" of als je niet weet hoe je begint. Activeer met \"Hoe gebruik ik mijn team?\"."
 ---
 
 # 🧭 Gids
